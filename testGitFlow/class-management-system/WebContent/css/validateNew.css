@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+.register-wrap{
+    width: 700px;
+    margin: 50px auto 0;
+    border: solid #bbbbbb 1px;
+    border-radius: 6px;
+}
+
+/*login*/
+.login-cont{ width:480px; background: #fff;height:522px;border: 1px #ccc solid;border-radius:6px;-webkit-border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:5px;}
+.login-cont h2{ font-size: 36px; color: #333; font-weight: normal; text-align: center; padding: 55px 0 0}
+.login-form{ width: 360px; margin: 0 auto}
+.ui-group{ padding: 36px 0 0; position: relative}
+/*表单*/
+.input-label{width: 100%; color:#666;  font-size:16px; position:absolute;pointer-events: none;left:-20px;/*top:0;top:7px\9;*/ top:12px; overflow: hidden;/*-webkit-transform: translate(0, 3.1em);transform: translate(0, 3.1em);-webkit-transition: -webkit-transform 0.25s;transition: transform 0.25s;*/}
+.input-label span{ padding-left:6%}
+.ui-input{height: 48px; position:relative; font-size:16px;line-height: 48px; background:#f0f0f0; border:1px #f0f0f0 solid;padding:0 0 0 6%;width: 94%;display: inline-block;transition:background-color 0.25s, border-color 0.25s;-webkit-transition:background-color 0.25s, border-color 0.25s;}
+
+.ui-input:focus,
+.input--filled .ui-input{
+    border-color: #67ad03; background:#FFF;
+}
+/*.ui-input:focus + .input-label,.input--filled .input-label{
+    -webkit-transform: translate(0, 1em);transform: translate(0, 1em);color:#67ad03; margin-left:-22px; font-size:14px;
+}*/
+
+.input--error .ui-input,.input--error .ui-input:focus{ border:1px #ff5050 solid; background:#fff}
+/*.input--error .ui-input:focus + .input-label,.input--error .input-label{
+    -webkit-transform: translate(0, 1em);transform: translate(0, 1em); color:#ff5050; margin-left:-22px; font-size:14px;
+}*/
+/*操作按钮*/
+.step-btn{color: #fff;line-height: 46px;font-size: 20px; text-align:center; border:1px #67ad03 solid;background: #67ad03;transition:background-color 0.25s, border-color 0.25s;}
+.step-btn:hover,.step-btn:active{color: #67ad03; border:1px #67ad03 solid;background: #fff;}
+
+.step-btn-error,.step-btn-error:hover{ background:#fe504f; border:1px #fe504f solid; color:#fff}
+
+
+.ui-group{
+    padding: 36px 0 0;
+    position: relative;
+}
+#regist{
+    width: 720px;
+    margin: 0 auto;
+}
+#regist h2{ font-size: 36px; color: #333; font-weight: normal; text-align: center; padding: 55px 0 0}
+#regist .section {
+    margin: 0;
+    overflow: hidden;
+    padding-top: 40px;
+}
+#regist .section p{
+    float: left;
+    text-align: center;
+    color: #FFFFFF;
+    height: 30px;
+    line-height: 30px;
+    width: 360px;
+}
+.regform{
+    width: 420px;
+    float: left;
+}
+.regtip{
+    width: 300px;
+    float: left;
+}
+.h910{
+    height: 910px;
+}
+.w210{width: 185px;}
+.bdnone{
+    border: none!important;
+}
+.close-bg{
+    padding: 10px;
+}
+.tips{
+    width: 230px;
+    height: 50px;
+    padding-top: 36px;
+    position: absolute;
+    z-index: 2;
+    margin-left: 410px;
+    margin-top: -90px;
+}
+.pt45{padding-top: 45px}
+.pt27{padding-top: 27px}
+.dagou{
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    left:0px;
+    top: 53px;
+    display: none;
+}
+.t45{top:45px}
+.show{display: block}
+.input--error{
+    color:#ff5050;
+}
+.w360{width: 480px}
+.ml7{
+    margin-left: 7px;
+}
+.mtf40{
+    margin-top: -40px;
+}
+.mtf70{
+    margin-top: -80px;
+}
+
+.correct .tips{
+    padding-left: 300px;
+}
+.correct .dagou{
+    display: block;
+}
+.error .dagou{
+    display: none;
+}
+
+.error p{
+    color: #ff5050;
+}
+.error .ui-input:focus{ border:1px #ff5050 solid}
+/*
+.error .ui-input:focus + .input-label,.error.input-label{
+    -webkit-transform: translate(0, 1em);transform: translate(0, 1em); color:#ff5050; margin-left:-22px; font-size:14px;
+}*/

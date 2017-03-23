@@ -1,0 +1,165 @@
+/*应用中心*/
+.yyong-list li{ margin:10px 10px 10px 0; float:left}
+.yyong-list li img{ width:60px; height:60px}
+.yyong-layer{ position:absolute; right:0;top:0; width:200px; overflow:hidden; padding:10px 0 10px 0; height:100%; background:#fff;}
+
+/*应用中心显示框*/
+.yyong-pic ul{ margin-right:-20px}
+.yyong-pic li{ margin-right:20px; float:left}
+.app-list {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.app-list * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.app-list:before,
+.app-list:after {
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.app-list:after {clear: both;}
+.app-list {zoom: 1;} /* IE < 8 */
+
+.app-list .app-box {
+    width: 175px;
+    height: 235px;
+    border: 1px #eaeaea solid;
+    float: left;
+    background: #ffffff;
+    margin-top: -1px;
+    margin-right: -1px;
+    position: relative;
+}
+
+.app-list .app-box:hover {
+    border-color: #ff9900;
+    z-index: 9;
+}
+.app-list .app-box.empty:hover {
+    border-color: #eaeaea;
+    z-index: 1;
+}
+.app-box > a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    padding: 45px 42px;
+}
+.app-box > a .t {
+    font: 16px/32px 'MICROSOFT YAHEI';
+}
+.app-box > a .s {
+    font: 12px/18px 'MICROSOFT YAHEI';
+    border-radius: 9px;
+    color: #ffffff;
+    display: inline-block;
+    padding: 0 9px;
+}
+.app-box > a .s1 {
+    background: #67ad03;
+}
+.app-box > a .s0 {
+    background: #999999;
+}
+.app-box {
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+}
+.app-box .d {
+    display: none;
+    height: 400px;
+    width: 871px;
+    background: rgba(255,255,255,1);
+    position: relative;
+    z-index: 19;
+}
+.app-box.active {
+    border: 1px #ff9900 solid;
+    z-index: 9;
+}
+.app-box.active .d {
+    display: block;
+    border: 1px #ff9900 solid;
+    margin-left: -1px;
+}
+.app-box.active:before {
+    content: '';
+    color: transparent;
+    display: block;
+    height: 8px;
+    width: 8px;
+    border: 1px #ff9900 solid;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    background: #ffffff;
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    margin-left: -5px;
+    z-index: 29;
+
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.app-list .icon {
+    background: url('../images/app-icon.png') no-repeat center center;
+    display: block;
+    height: 88px;
+    width: 88px;
+}
+
+.app-list .icon-01 {
+    background-position: 0 0;
+}
+.app-list .icon-02 {
+    background-position: 0 -90px;
+}
+.app-list .icon-03 {
+    background-position: 0 -180px;
+}
+.app-list .icon-04 {
+    background-position: 0 -270px;
+}
+.app-list .icon-05 {
+    background-position: 0 -360px;
+}
+.app-list .icon-06 {
+    background-position: 0 -450px;
+}
+.app-list .icon-07 {
+    background-position: 0 -540px;
+}
+.app-list .icon-08 {
+    background-position: 0 -630px;
+}
+.app-list .coming-soon {
+    font-size: 16px;
+    color: #999999;
+    padding-top: 90px ;
+    text-align: center;
+}
+/*应用中心图片切换*/
+.app-pic{width:275px;}
+.app-prev,.app-next{ margin-top:120px;width:40px;height:65px; background-color:#e5e5e5}
+.app-prev{ float:left;background-image:url(../images/prev.png); background-position:50%; background-repeat:no-repeat}
+.app-next{float:right; background-image:url(../images/next.png); background-position:50%; background-repeat:no-repeat}
+.app-prev:hover,.app-next:hover{ background-color:#b2b2b2;transition: all .2s ease-in;}
+.app-picbox{float:left;width:152px; height:305px;background:url(../images/yy_bg.jpg) no-repeat;overflow:hidden;}
+.showbox{ position:relative;width:130px; height:231px;overflow:hidden; margin:36px 0 0 11px}
+.showbox ul{width:1900px; position:absolute;left:0px;top:0;height:231px; }
+.showbox li{display:block;width:130px;float:left; height:231px;position: relative;}
+.showbox li img{width:130px; height:231px;}

@@ -1,0 +1,73 @@
+/*帐号信息*/
+
+.userbox-l{ padding:68px 0 0 0;height:180px; width:42%; float:left}
+.userbox-r{ padding:68px 0 0 0%;height:180px; width:28%;float:left}
+.userphoto{ width:100px; margin-left:37px;height:100px;border-radius:100px;-moz-border-radius:100px;-webkit-border-radius:100px; float:left}
+.userinfo{margin-left:167px}
+.userinfo h2{ color:#67ad03; font-size:18px; padding:10px 0 22px 0}
+.userbox-l .p1,.userbox-r .p1{ font-size:14px; color:#666; padding-bottom:4px}
+.userbox-r .link{ padding-top:16px; padding-bottom:25px}
+.gonggao{overflow:hidden; width:30%; float:left}
+.gonggao .list-box{ height:220px; padding:28px 25px 0 20px; border-left:1px #eaeaea solid}
+/*套件*/
+.suite-box .tit{ height:50px; line-height:50px; background:#f3f7fb; border:1px #eaeaea solid; border-left:0; border-right:0; padding:0 30px 0 40px}
+.suite-box .tit h3{ color:#333; font-size:16px;}
+.suite-box .tit h3 img{ margin-right: 5px;vertical-align: -4px;}
+.suite-box .anzhuang{ float:right}
+.suite-box .btn{ width:88px;text-align:center; height:28px; line-height:28px;color:#fff; font-size:14px; outline:none}
+.suite-box .btn-success{ border: 1px #e68b02 solid;background: #ff9900;}
+.suite-box .btn-success:hover{ background: #ffaf37; border: 1px #ff9e0d solid;}
+.suite-box .btn-warning{ border: 1px #639916 solid;background: #67ad03;}
+.suite-box .btn-warning:hover{ background: #78c30c;border: 1px #67ad03 solid;}
+.suite-list{ padding:24px 8% 0 73px;}
+.suite-list li{  padding:0 0 20px 0; float:left; width:20%; text-align:center}
+.suite-list li .cont{ width:69px;position:relative;text-align:center}
+.suite-list li .cont .bz{ position:absolute;right:-20px;top:-17px; width:38px; height:23px;background:url(../../images/admin/bizhuang.png)no-repeat;}
+.suite-list li img{ width:69px; height:69px; vertical-align:top}
+.suite-list li .txt{ font-size:14px; color:#333; padding:6px 0 6px}
+.suite-list li .state{ border-radius: 9px;color: #fff;display: inline-block; padding: 0 9px;}
+.suite-list li .yes{ background: #bbb;}
+.suite-list li .no{ background: #67ad03;}
+.suite-list li .introduction{ width:460px; display:none; z-index:120; border:4px #eaeaea solid; background:#fff; position:absolute;top:111%;left:-16px;box-shadow: 2px 2px 6px #eaeaea;-webkit-box-shadow: 2px 2px 6px #eaeaea}
+.suite-list li .introduction .arrow{position:absolute;top:-15px;left:36px;background:url(../../images/admin/arrow-t.png) no-repeat; width:24px; height:25px;}
+.suite-list li .introduction .pd{ padding:14px 22px 10px; text-align:left}
+.suite-list li .introduction .title{ height:30px;border-bottom:1px #eaeaea solid; padding-bottom:10px; margin-bottom:17px}
+.suite-list li .introduction .title h3{ font-size:14px; margin-top:10px; display:inline-block;color:#333;}
+.suite-list li .introduction dl{ font-size:14px; line-height:22px; padding-bottom:17px}
+.suite-list li .introduction  dt{width:70px;float:left;}
+.suite-list li .introduction  dd{ margin-left:70px;}
+
+/*.suite-list li:nth-child(4) .introduction,.suite-list li:nth-child(5) .introduction{right:-20px;left:auto}
+.suite-list li:nth-child(4) .introduction .arrow,.suite-list li:nth-child(5) .introduction .arrow{left:auto;right:36px}
+*//*列表*/
+.list-box .tit{ border-bottom:1px #ddd dashed; padding:0 0 10px 0; margin-bottom:10px}
+.list-box .tit h3{ color:#333; font-size:16px; line-height:20px}
+.list-box .tit h3 img{ margin-right:12px; vertical-align:-4px}
+.list-box .tit .more{ font-size:14px; color:#999}
+.list-box li{ line-height:30px; font-size:14px; overflow:hidden;background:url(../../images/admin/dot.gif) 0 50% no-repeat; padding-left:16px;}
+.list-box li .time{ color:#999; float:right}
+.list-box li a{color:#666; display:block;width:78%;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+.list-box li a:hover,.list-box li a:visited{ color:#999}
+/*问题*/
+.question{ border-top:1px #ddd solid; padding:26px 40px 20px 50px;}
+.question-l{width:50%;float:left;}
+.question-r{padding-left:4%;width:46%; float:left}
+/*安装注册弹框*/
+.wxh{ padding:55px 0px;}
+.wxh li{ width:50%; float:left; padding:20px 0 0;text-align:center}
+.wxh li .border-l{ border-left:1px #eaeaea solid}
+.wxh .p1{ font-size:16px; color:#333; padding:20px 0 18px; font-weight:bold}
+/*按钮*/
+/*.wjbtn{display: inline-block;padding:9px 0;font-weight: 400;line-height: 1.42857143; text-align: center;white-space: nowrap;vertical-align: middle;cursor: pointer;
+border: 1px solid transparent;border-radius: 4px;}
+.wjbtn-lv{color: #fff; background-color: #67ad03;border-color:#639916;}
+.wjbtn-huang{color: #fff; background-color: #ff9900;border-color:#e68b02;}
+
+.wjbtn-lg{padding: 10px 16px;font-size: 18px; line-height: 1.3333333;border-radius: 6px;}
+.wjbtn-sm{font-size: 14px;line-height: 1.5;border-radius:4px;}
+*/
+/*安装成功*/
+.layer-w720{ width:720px}
+.layertips{width:280px; height:265px; text-align:center; border-right:1px #eaeaea solid}
+.layertips p{ color:#333; font-weight:bold; font-size:18px;}
+.layertips-r{width:323px; margin-left:50px}

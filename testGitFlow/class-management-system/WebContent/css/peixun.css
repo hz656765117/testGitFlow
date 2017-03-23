@@ -1,0 +1,12 @@
+/*培训*/
+.px-list{ margin-top:-1px}
+.px-list li{margin-top:-1px; padding:18px 20px; position:relative}
+
+.list-li{ border:1px #eaeaea solid;}
+.list-li :last-child {border-bottom:0}
+.list-li:hover{border:1px #67ad03 solid; z-index:1}
+
+.px-list01 li{ border:1px #eaeaea solid; margin-top:-1px;padding: 18px 20px;position: relative;}
+.px-list01 li:hover{border:1px #67ad03 solid; z-index:2;}
+
+

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/jsp/layouts">
+	<excludes>
+		<pattern>*.html</pattern>
+		<pattern>*/search*</pattern>
+		<pattern>*/login*</pattern>
+		<pattern>*/register*</pattern>
+		<pattern>*/about*</pattern>
+		<pattern>*/activity_201507*</pattern>
+		<pattern>*/upload*</pattern>
+		<pattern>*/setQyInfo/index*</pattern>
+		<pattern>*/guanhuai/getPage*</pattern>
+		<pattern>*/guanhuai/create*</pattern>
+		<pattern>*/guanhuai/getdetail*</pattern>
+		<pattern>*/survey/paperList*</pattern>
+		<pattern>*/vote/paperList*</pattern>
+		<pattern>*/announcement/preview*</pattern>
+		<pattern>*/js/alipayapi*</pattern>
+		<pattern>*/meet/payMsg*</pattern>
+		<pattern>*/experience/*</pattern>
+		<pattern>*/wechatWall/detail*</pattern><!-- 微信墙 -->
+		<pattern>*/journal/preview*</pattern>
+		<pattern>*/article/preview*</pattern>
+		<pattern>*/survey/preview*</pattern>
+		<pattern>*/vote/preview*</pattern>
+		<pattern>*/train/preview*</pattern>
+		<pattern>*/setQyInfo/appInfo*</pattern>
+		<pattern>*/setQyInfo/detail*</pattern>
+		<pattern>*/umeditor/*</pattern>
+		<pattern>*/companyAccount/*</pattern>
+		<pattern>*/ueditor/*</pattern>
+		<pattern>*/appCenter/*</pattern>
+		<pattern>*/install/*</pattern>
+		<pattern>*/ajax/*</pattern>
+		<pattern>*/wechatSSO/*</pattern>
+		<pattern>*/wall/*/fullscreen*</pattern>
+		<pattern>*module/cms/template/getDetailById/*</pattern>
+		<pattern>*/order/payFormSubmit*</pattern>
+	</excludes>
+	<decorator name="new" page="main_new.jsp">
+	    <pattern>*</pattern>
+		<!-- <pattern>*/activity/*</pattern>
+		<pattern>*/basicDataMng/*</pattern>
+		<pattern>*/updatePwd/*</pattern> -->
+  	</decorator>
+	<!-- <decorator name="main" page="main.jsp">
+		<pattern>*</pattern>
+	</decorator> -->
+  	<decorator name="no" page=""></decorator>
+</decorators>

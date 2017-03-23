@@ -1,0 +1,470 @@
+ul,li{
+  list-style:none;list-style-type:none;
+  margin:0;
+  padding:0;
+}
+
+.reviewrange:after {
+  display: block;
+  height: 0;
+  clear: both;
+  font-size: 0;
+  line-height: 0;
+  content: '';
+  visibility: hidden;
+  zoom: 1;
+}
+
+.reviewrange-left {
+  display: block;
+  float: left;
+  width: 80px;
+  margin-top: 6px;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.reviewrange-right {
+  overflow: hidden;
+}
+
+.reviewrange-btn span {
+  display: inline-block;
+  padding: 0 10px;
+  margin-right: 8px;
+  font-size: 14px;
+  line-height: 28px;
+  color: #666;
+  text-align: center;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+}
+
+.reviewrange-btn span.cur {
+  color: #fff;
+  background: #67ac02;
+  border: 1px solid #67ac02;
+  border-radius: 4px;
+}
+
+.reviewrange-frame {
+  position: relative;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.reviewrange-object {
+  position: relative;
+  height: auto;
+  max-height: 100px;
+  min-height: 30px;
+  padding: 5px 35px 5px 5px;
+  overflow: hidden;
+  overflow-y: auto;
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  line-height: 0;
+}
+
+.reviewrange-object li {
+  display: inline-block;
+  padding: 4px 6px;
+  margin-right: 5px;
+  margin-bottom: 2px;
+  color: #0078b6;
+  text-align: center;
+  background: #f9f9f9;
+  border: 1px dashed #eaeaea;
+  line-height: 0;
+  vertical-align: middle;
+}
+
+.reviewrange-object li.deleted {
+  background: #e3e3e3;
+}
+
+.reviewrange-object .labelvalue {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 20px;
+  margin: 0;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.reviewrange-object .closeicon {
+  margin-left: 4px;
+  height: 20px;
+  width: 20px;
+  color: #7cb8d7;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../images/icon_close.png) 50% 50% no-repeat;
+  background-size: 16px;
+}
+
+.reviewrange-object .reviewrange-search {
+  color: #333;
+  background: #fff;
+  border: 0;
+}
+
+.reviewrange-search input {
+  display: block;
+  height: 22px;
+  line-height: 18px;
+  padding: 2px;
+  border: 0;
+  min-width: 200px; 
+}
+
+.reviewrange-more {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  cursor: pointer;
+  background: url('../images/icon_add_btn.png');
+  background-size: 20px;
+}
+
+.reviewrange-match {
+  top: 100%;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 100;
+  display: none;
+  max-height: 300px;
+  overflow: auto;
+  background: #f9f9f9;
+  border-right: 1px solid #eaeaea;
+  border-left: 1px solid #eaeaea;
+}
+
+.match-cont{
+  position: relative;
+}
+
+.match-cont li {
+  padding: 8px 0;
+  font-size: 12px;
+  color: #666;
+  cursor: pointer;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.match-cont li:hover{
+  background: #eee;
+}
+
+.match-cont li .matchname {
+  display: inline-block;
+  min-width: 100px;
+  margin-left: 10px;
+}
+
+.match-cont li .info {
+  color: #999;
+}
+
+.click-select {
+  background: #eee;
+}
+
+
+
+/* 弹框部分 */
+
+.view-box{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9999;
+}
+
+.view-mark{
+  height: 100%;
+  background-color: #000;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+
+.view-box-main{
+  width: 580px;
+  box-sizing:border-box;
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top:-260px;
+  margin-left:-290px;
+}
+
+.view-box-close{
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  top: 0;
+  width: 40px;
+  height: 30px;
+  background: url('../images/icon_close_btn.png') no-repeat;
+}
+
+.view-box-top,.rymen{
+  zoom: 1;
+}
+.view-box-top:after,.rymen:after{
+  content: '';display: block;clear: both;height: 0;visibility: hidden;font-size: 0;line-height: 0;
+}
+
+.view-box-top{
+  margin: 20px 0;
+}
+.view-box-title{
+    float: left;
+    display: inline-block;
+    width: 115px;
+    text-align: right;
+    line-height: 20px;
+    padding-top: 10px;
+    margin-left: -15px;
+}
+
+.view-box-input{
+  margin-left: 100px
+}
+
+.box {
+  width: 100%;
+  margin: 0 auto;
+  background: #fafafa;
+  border: 1px dashed #e5e5e4;
+}
+
+.tab_menu {
+  overflow: hidden;
+  border-bottom: 1px solid #e5e5e4;
+}
+
+.tab_menu li {
+  float: left;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  color: #666;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tab_menu li.current {
+  color: #67ac02;
+  border-bottom: 2px solid #67ac02;
+}
+
+.bumen {
+  height: 295px;
+  padding: 0 14px;
+  overflow: auto;
+  background: #fff;
+  position: relative;
+}
+
+.hide {
+  display: none !important;
+}
+
+.rymen .bulist {
+  float: left;
+  width: 290px;
+  height: 295px;
+  overflow: auto;
+  box-sizing:border-box;
+}
+
+.rymen .rylists {
+  float: right;
+  width: 246px;
+  height: 295px;
+  overflow: auto;
+  background: #fff;
+  border-left: 1px solid #e5e5e4;
+}
+
+.rylist li {
+  position: relative;
+  overflow: hidden;
+  font-size: 14px;
+  color: #333;
+  border-bottom: 1px solid #e5e5e4;
+}
+
+.rylist li label {
+  display: block;
+  padding: 8px 0;
+  margin: 0;
+}
+
+.rylist li img {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  margin-left: 10px;
+}
+
+.rylist li span {
+  position: relative;
+  display: inline-block;
+}
+
+.rylist li input {
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+
+
+.view-box-bottom{
+  text-align: center;
+  margin-top: 15px;
+}
+
+.view-btn-define{
+  border-color: #e68b02;
+  background: #f90;
+  line-height: 38px;
+  padding: 0 38px;
+  border-radius: 4px;
+  font-size: 16px;
+  border-color: #ff9e0d;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-decoration: none;
+}
+.view-btn-define:hover{
+  border-color: #ff9e0d;
+  background: #ffaf37;color: #fff;
+}
+
+.view-btn-cancel{
+  margin-left:20px;
+  background: -webkit-linear-gradient(top,#fff,#f7f7f7);
+  background: -moz-linear-gradient(top,#fff,#f7f7f7);
+  background: -o-linear-gradient(top,#fff,#f7f7f7);
+  background: -ms-linear-gradient(top,#fff,#f7f7f7);
+  background: linear-gradient(top,#fff,#f7f7f7);
+  background-color: #f7f7f7;
+  line-height: 38px;
+  padding: 0 38px;
+  border-radius: 4px;
+  font-size: 16px;
+  border: 1px #ddd solid;
+  color: #666;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-decoration: none;
+}
+
+.view-btn-cancel:hover{
+  background: #bfc6cd;
+  border-color: #adb3b8;
+  border-radius: 4px;
+  color:#fff;
+}
+
+.reviewrange-tab{
+  margin-bottom: 10px;
+}
+.reviewrange-tab li{
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 30px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.reviewrange-tab li.vcur{
+  border: 1px solid #67ad03;
+  background:#67ad03;
+  color:#fff;
+}
+
+/**
+ * @Author:      Rischa
+ * @DateTime:    2016-08-11 15:24:26
+ * @Description: new Create
+ */
+
+.dept-loading{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 16px;
+  width: 16px;
+  margin: -8px 0 0 -8px;
+  display: block;
+  background: url('../images/loading.gif') no-repeat;
+}
+
+/* 标签 */
+.tab_box .bqmen{
+  background: #fff;
+  height: 295px;
+  overflow: auto;
+  font-size: 14px;
+}
+
+.taglist li{
+  line-height: 40px;
+  border-bottom:1px solid #ddd;
+  padding: 0 20px;
+}
+.taglist li label{
+  position: relative;
+  display: block;
+}
+.taglist li input{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  height: 14px;
+  width: 14px;
+  margin-top: -7px;
+}
+

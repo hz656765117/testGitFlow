@@ -1,0 +1,160 @@
+.cases {
+    border-top: 1px dashed #ddd
+}
+
+.casetitle {
+    width: 351px;
+    height: 31px;
+    background: url("../images/title.jpg");
+    margin: 40px auto;
+}
+
+
+
+.box {
+    width: 1000px;
+    height: 600px;
+    overflow: hidden;
+    margin: 0 auto 50px auto;
+    position: relative;
+}
+
+.tab_menu {
+    width: 200px;
+    position: absolute;
+    top: 35px;
+    left: 0;
+}
+.tab_menu li {
+    width: 200px;
+    height: 72px;
+    color: #000;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.tab_menu li.current {
+    color: #333;
+}
+.tab_menu li a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    display: block;
+}
+.tab_menu li.current a {
+    color: #333;
+}
+
+.logos{
+    display: block;
+    width: 152px;
+    height: 72px;
+}
+.logo1{
+    background: url("../images/fsj.jpg");
+}
+.logo2{
+    background: url("../images/zgtz.jpg");
+}
+.logo3{
+    background: url("../images/dunan.jpg");
+}
+.logo4{
+    background: url("../images/dx.jpg");
+}
+
+.contentarr{
+    display: block;
+    width: 12px;
+    height: 20px;
+    background: url("../images/carrow.png");
+    position: absolute;
+    right: -1px;
+    top: 50%;
+    margin-top: -10px;
+    visibility: hidden;
+}
+.tab_menu li.current .contentarr{
+    visibility: visible;
+}
+
+
+.tab_box {
+    padding: 30px 50px;
+    width: 698px;
+    height: 538px;
+    background: #f9f9f9;
+    margin-left: 200px;
+    border-radius: 4px;
+    border: 1px solid #eee;
+}
+.tab_box li {
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+}
+.tab_box li span {
+    margin: 0 5px 0 0;
+    font-family: "宋体";
+    font-size: 12px;
+    font-weight: 400;
+    color: #ddd;
+}
+.tab_box .hide {
+    display: none;
+}
+
+.tabcontent{
+    width: 698px;
+    padding-right: 20px;
+    height: 538px;
+    overflow: auto;
+}
+.tabcontent h2{
+    font-size: 24px;
+    color: #333;
+    padding-bottom: 30px;
+    border-bottom:1px solid #eee;
+}
+.tabcontent .parts{
+    padding: 30px 0 15px 0;
+}
+.tabcontent .part1{
+    width: 100px;
+    height: 30px;
+    background: url("../images/a.jpg");
+}
+.tabcontent .part2{
+    width: 100px;
+    height: 30px;
+    background: url("../images/b.jpg");
+}
+.tabcontent p{
+    font-size: 14px;
+    color: #333;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+.text1 p{
+    text-indent: 2em;
+    text-align: justify;
+}
+.text2 img{
+    margin-bottom: 20px;
+}
+.arrowbtn {
+    width: 160px;
+    height: 25px;
+    position: absolute;
+    cursor: pointer;
+}
+.arrowup{
+    background: url("../images/arrow-up.jpg") no-repeat #fff;
+    left: 0;
+    top: 0;
+}
+.arrowdown{
+    background: url("../images/arrow-down.jpg") no-repeat #fff;
+    left: 0;
+    bottom: 0;
+}

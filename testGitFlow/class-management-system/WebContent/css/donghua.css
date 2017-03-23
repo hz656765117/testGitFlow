@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.sec-cir{ width:1144px;height:400px;bottom:-400px;left:50%;opacity:0; margin-left:-572px; background:url(../images/donghua/sec-cir.png) no-repeat;}
+.sec-cir img{left:572px; bottom:0px; opacity:0; z-index:10;}
+
+.sec-img1{left:88px;bottom:165px;}
+.sec-img2{left:339px;bottom:296px;}
+.sec-img3{right:339px;bottom:296px;}
+.sec-img4{right:88px;bottom:165px;}
+
+
+.sec-p1{left:88px;top:155px;opacity:0;}
+.sec-p2{left:339px;top:0px;opacity:0;}
+.sec-p3{right:339px;top:0px;opacity:0;}
+.sec-p4{right:88px;top:155px;opacity:0;}
+
+.lh60{ line-height:60px;}
+.f48{ font-size:48px;}
+.zi{ color:#10234c;}
+.w200{ width:200px;}
+#second h2{margin:0 auto;left:0;right:0;top:-50px;opacity:0;}
+.h2-ani{-webkit-animation:fadeOutUpBig 1s .2s ease both;-moz-animation:fadeOutUpBig 1s .2s ease both;}

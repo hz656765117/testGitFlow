@@ -1,0 +1,55 @@
+.liwulist tr{
+    border-bottom: 1px solid #ddd;
+}
+.liwulist tr img{
+    width: 60px;
+    height: 60px;
+}
+.thirdlan span{
+    color: #71b6e1;
+}
+.liwulist tr a{
+    color: #71b6e1;
+}
+.lwdetail span{
+    display: block;
+    float: left;
+    width: 100px;
+    text-align: right;
+    font-size: 14px;
+}
+.lwdetail{
+    overflow: hidden;
+    margin-bottom: 10px;
+    position: relative;
+}
+.lwdetail select,.lwdetail input,.lwdetail .sclw,.lwdetail textarea{
+    display: block;
+    margin-left: 120px;
+}
+.lwdetail select{
+    width: 300px;
+    height: 30px;
+}
+.lwdetail input{
+    width: 290px;
+    padding-left: 5px;
+    height: 30px;
+}
+.lwdetail textarea{
+    width: 300px;
+}
+.scbtn{
+    background: #2FCC71;
+}
+.lwdetail p{
+    position: absolute;
+    top: 5px;
+    right: 120px;
+    color: #0099cc;
+}
+
+.bianjiqu{
+    padding-left: 30px;
+    display: block!important;
+}

@@ -1,0 +1,100 @@
+#third {
+	background: url(../images/thirdbg-01.jpg) center top #67ad03 no-repeat;
+	width: 100%;
+	min-height: 650px;
+	overflow: hidden;
+}
+#third .container {
+	margin: 0 auto;
+	width: 1300px;
+	position: relative;
+	height: 100%;
+	min-height: 650px;
+}
+#third-title {
+	color: #FFFFFF;
+	margin: 0 auto;
+	width: 24em;
+	text-align: center;
+	padding-top: 5%;
+	position: absolute;
+	margin-left: -120px;
+	left: 50%;
+	
+}
+#third-title h3 {
+	font-size: 60px;
+	font-weight: 500;
+}
+#third-title p {
+	font-size: 30px;
+}
+#third-phone {
+	width: 52%;
+	position: absolute;
+	bottom: 0;
+	left: 120px;
+}
+#third-phone img {
+	width: 100%;
+}
+#third-line00 p, #third-line01 p {
+	display: none;
+}
+#third-line00, #third-line01, #third-line02{
+	position: absolute;
+}
+#third-line00 {
+    bottom: 215px;
+    left: 470px;
+}
+#third-line01 {
+    bottom: 175px;
+    left: 540px;
+}
+#third-line02 {
+	bottom: 140px;
+	left: 760px;
+}
+
+#fourth {
+	background-color: #FFFFFF;
+	width: 100%;
+	min-height: 650px;
+	overflow: hidden;
+	position: relative;
+}
+#fourth-title, #fourth-01, #fourth-02, #fourth-03, #fourth-04 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+#fourth-title {
+	margin-top: -300px;
+	z-index: 9;
+	text-align: center;
+	width: 360px;
+	margin-left: -180px;
+}
+#fourth-title h3 {
+	font-size: 60px;
+	font-weight: 500;
+}
+#fourth-title p {
+	font-size: 30px;
+}
+#fourth-01 {
+	margin-top: -110px;
+}
+#fourth-02 {
+	margin-top: -30px;
+	margin-left: -520px;
+}
+#fourth-03 {
+	margin-top: 205px;
+	margin-left: 230px;
+}
+#fourth-04 {
+	margin-top: 240px;
+	margin-left: -510px;
+}

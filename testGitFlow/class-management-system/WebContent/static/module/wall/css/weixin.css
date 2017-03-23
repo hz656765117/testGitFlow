@@ -1,0 +1,199 @@
+.bg011 {
+    background: url(../images/bg2.jpg) no-repeat;
+    background-size: cover;
+}
+
+.content {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.tit {
+    float: left;
+    word-wrap: break-word;
+    word-break: break-all;
+    width: 760px;
+    text-align: left;
+    line-height: 40px;
+    height: 99px;
+}
+
+.wxdiv {
+    margin-top: 11px;
+    height: 455px;
+    overflow: hidden;
+}
+
+.wxdiv ul li {
+    margin-top: 5px;
+    height: 80px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background: #ffffff;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+}
+
+.bim-wrap {
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+}
+
+.content01 h2 {
+    color: #ff0000;
+}
+
+.content01 p {
+    color: #9a0000;
+}
+
+.content02 h2 {
+    color: #3c9132;
+}
+
+.content02 p {
+    color: #28648c;
+}
+
+.content03 h2 {
+    color: #77aa00;
+}
+
+.content03 p {
+    color: #669900;
+}
+
+.content04 h2 {
+    color: #2873d2;
+}
+
+.content04 p {
+    color: #054b8c;
+}
+
+.content05 h2 {
+    color: #f00078;
+}
+
+.content05 p {
+    color: #b90028;
+}
+
+.content06 h2 {
+    color: #f069b4;
+}
+
+.content06 p {
+    color: #f00078;
+}
+
+.content-color {
+    margin-top: 3px;
+}
+
+.content-style01 {
+    font-size: 20px;
+}
+
+.content-style02 {
+    font-size: 20px;
+}
+
+.content-style03 {
+    font-size: 20px;
+}
+
+.content-style04 {
+    font-size: 20px;
+}
+
+.black-pop {
+    background-color: #3e3e3e;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+}
+
+.black-tit {
+    color: #fff;
+    line-height: 100px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.tit-cor {
+    color: #f6ff27;
+    padding: 0 4px;
+    font-weight: bold
+}
+
+.black-close {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.weixin-wrap {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.weixin-wrap img {
+    width: 50px;
+    height: 50px;
+}
+
+/*bg02鏍峰紡琛�钃濊壊鑳屾櫙鍥�*/
+.bg02 .content06 h2 {
+    color: #3c9133 !important;
+}
+
+.bg02 .content-color {
+    color: #356184 !important;;
+}
+
+.bg02 .wxdiv ul li {
+    background-color: #edf5f8;
+}
+
+/*bg03鏍峰紡琛�缁胯壊鑳屾櫙鍥�*/
+.bg03 .content06 h2 {
+    color: #79ad03 !important;
+}
+
+.bg03 .content-color {
+    color: #629606 !important;;
+}
+
+.bg03 .wxdiv ul li {
+    background-color: #f3f7e6;
+}
+
+/*bg04鏍峰紡琛�鏄熺┖鑳屾櫙鍥�*/
+.bg04 .content06 h2 {
+    color: #3771d2 !important;
+}
+
+.bg04 .content-color {
+    color: #0b4b89 !important;;
+}
+
+.bg04 .wxdiv ul li {
+    background-color: #e7e8ea;
+}
+.wxdiv{margin-top:100px}
+#ul-chat-list li{ padding:0 25px; min-height:166px; overflow:hidden; margin:0 0 10px 0}
+#ul-chat-list li .br4{border-radius:88px;width:140px;height:140px; margin:14px 0 0}
+#ul-chat-list li h2{font-size:36px;color:#666; margin:8px 0 0}
+#ul-chat-list li h2 span{ font-size:32px;}
+#ul-chat-list li .content-color{font-size:44px;color:#333;line-height:46px;}
+#ul-chat-list li .content-color img{ width:40px}
+#h1-activity-title{margin:20px 0 0;overflow: hidden;height: auto;text-overflow: ellipsis;white-space: nowrap;text-shadow:0px 2px 5px rgba(0,0,0,0.30);}

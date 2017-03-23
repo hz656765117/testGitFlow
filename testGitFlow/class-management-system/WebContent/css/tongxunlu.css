@@ -1,0 +1,56 @@
+/*批量导入*/
+.daoru{ margin:60px 70px 50px 70px}
+.daoru-upload{ padding:26px 58px 30px 95px;}
+/*通讯录详细*/
+.card{ height:470px}
+.card-l{ width:150px; padding-top:50px;}
+.card-pic-cont{ width:90px; margin:0 auto}
+.card-pic{ background:#eaeaea; width:90px; height:85px; padding-top:5px; text-align:center}
+.card-pic img{ width:80px; height:80px;}
+.card-r{ width:410px; height:435px;margin-top:50px;}
+.card-list li{ height:38px; line-height:38px}
+/*加密*/
+.icon-suo{width:60px; height:60px;background:url(../images/suo.png) no-repeat;}
+.jiami-list{text-align:center;width:118px;position:absolute; top:26px; left:0px; z-index:999;border:1px #eaeaea solid; background:#fff;  display:none;}
+.jiami-list li{line-height:30px; height:30px; position:relative; z-index:32}
+.jiami-list li a{display:block;font-weight:normal; font-size:12px}
+.jiami-list li a:hover{background:#f5f5f5}
+.jiami-list li a,.pd-list li a:visited{color:#333}
+.jiami-nav .ico-jiami{background-position:0 -951px;}
+.jiami-nav:hover .icon-barr{border-color: #67ad03 transparent transparent transparent;}
+.jiami-nav:hover .jiami-list{ display:block}
+/*通讯录列表*/
+.txl-list{ text-align:center;}
+.txl-list .li01{width:75px;}
+.txl-list .li02{width:124px; padding-left:10px}
+.txl-list .li03{width:125px}
+.txl-list .li04{width:150px; padding-right:26px}
+/*.txl-list .li05{width:110px}
+.txl-list .li06{width:132px}
+*//*通讯录加密后进入*/
+.txl-login{ width:390px; margin:0 auto; padding-top:64px}
+/*菜单*/
+#contactsTree.ztree{padding: 5px 0 5px 17px;overflow: auto;}
+#contactsTree.ztree li a{ margin: 0 15px 0 22px;position:relative;}
+#contactsTree.ztree li a:hover{background-color: #e0edf8;}
+#departmentTree.ztree{padding: 5px 0 5px 17px;}
+#departmentTree.ztree li a{ margin: 0 44px 0 22px;}
+#departmentTree.ztree li span.button.chk { right: 17px;}
+.department-arrow{ background: url(../images/department-arrow.png) no-repeat center center; cursor:pointer}
+.contacts-selected > div {background: url(../images/contacts-sprite.png);background-repeat: no-repeat; background-position: 19px 6px; padding-left: 45px; line-height: 30px; height: 30px; position: relative; cursor: pointer;}
+.contacts-selected > div.cur, .contacts-selected > div:hover {background-color: #E0EDF8;}
+.contacts-selected > div > i { background: url(../images/contacts-sprite.png); background-repeat: no-repeat; position: absolute; width: 12px; height: 12px; background-position: 0px -25px; right: 20px; top: 11px;}
+/*菜单20140926*/
+.icon-add{background:url(../images/add.gif) no-repeat;}
+.icon-update{background:url(../images/update.gif) no-repeat;}
+.icon-del{background:url(../images/menu-icon.png) no-repeat;}
+.menu-caozuo{width:128px; border:1px #e0edf8 solid;}
+.menu-caozuo li{width:128px; height:40px; line-height:40px; }
+.menu-caozuo a{ display:block;color:#666; width:116px;margin:0 1px; padding-left:10px}
+.menu-caozuo a:hover{ color:#0078b6; background:#f5f5f5;}
+/**/
+.ad-tell-bd{width:120px; border:1px #e0edf8 solid;position:absolute;top:22px;left:0px;z-index:996}
+.ad-tell-bd li{height:32px; line-height:32px; }
+.ad-tell-bd a{ display:block;color:#666;}
+.ad-tell-bd a:hover{ color:#0078b6; background:#f5f5f5;}
+

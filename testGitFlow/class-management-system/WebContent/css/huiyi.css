@@ -1,0 +1,7 @@
+/*充值*/
+.jine li{ border:1px #cccccc solid;height:40px; line-height:40px; padding:0 10px; color:#666; text-align:center; float:left; margin-left:10px; cursor:pointer}
+.jine li.cur{border:2px #67ad03 solid;height:38px; line-height:38px;}
+.payway label{display:block;height:48px;width:118px;overflow:hidden;background: url(../images/ico_pay.png) no-repeat;cursor: pointer;border:1px #eaeaea solid;}
+.payway label input{position:absolute;top:21px;left:8px;}
+.payway .cur{border:2px #67ad03 solid; width:116px;height:46px; line-height:46px;}
+.payway .zhifubao{background-position:14px 9px}

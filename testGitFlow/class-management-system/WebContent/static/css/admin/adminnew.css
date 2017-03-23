@@ -1,0 +1,357 @@
+/*头部*/
+html, body {
+    height: 100%;
+}
+a{ outline:none}
+.hnav {height:55px; line-height:55px;float: right;padding-right:10px}
+.hnav li {height:55px;float: left; color:#fff; font-size:14px}
+.hnav li a {padding: 0 20px;display: block;color: #fff;font-size: 14px;transition:all ease-out .3s;}
+.hnav li a:hover,.hnav li a.active{background-color:#2e3339;color:#67ad03;}
+.ico-exit01{background: url('../images/admin/exit.png') no-repeat 0 0; width:14px; height:14px}
+.pr20{ padding-right:20px}
+.dropdown {cursor: pointer;padding: 0 12px 0 8px;width: 138px;text-align: right; position: relative;}
+.dropdown .name {
+    width: 94px;
+    height: 40px;
+    float: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; text-align:center
+}
+.ml32{ margin-left:32px}
+.hnav li.contact a{ padding:0 16px; height:55px}
+.rexian-menu {
+    position: absolute;
+    top: 100%;
+    right:0px;
+    z-index: 1000;
+    min-width: 140px; line-height:24px;
+    font-size: 14px;padding:8px 0 0 0; display:none
+    
+}
+
+.rexian-menu-cont{background: #38424d; padding:10px 0 10px 12px}
+.rexian-menu-cont .uparrow{ position:absolute;top:-8px;right:40px;}
+
+.dropdown-menu li{ float:none; height:40px; text-align:center; line-height:40px;}
+.open>.dropdown-menu {
+    display: block;
+}
+.open>.caret,.dropdown:hover .caret{
+    -webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);transform:rotate(180deg);
+}
+
+.navbar {position: relative; z-index:10;min-height:auto;border:0;background: #38424d; border-radius:0; margin-bottom:0}
+.navbar-header{background:#38424d; z-index:100; position:relative}
+.navbar-header .logo{ padding:0 34px; margin-top:12px; float:left; position:relative; z-index:999}
+.navbar-header .logo h1{ text-indent:-999px; display:none}
+.dropdown-menu{position: absolute;top: 100%;left: 0;z-index: 1000; min-width: 140px;font-size: 14px; background: #38424d; display: none; margin:0; border-radius:0; padding:0; border:0; box-shadow:none}
+.dropdown-menu>li>a{color: #727b86; line-height:40px}
+.dropdown-menu>li>a:hover{ color:#fff; background:none}
+
+
+
+.animated {
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: .5s;
+    -moz-animation-duration: .5s;
+    -ms-animation-duration: .5s;
+    -o-animation-duration: .5s;
+    animation-duration: .5s;
+}
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    -moz-animation-name: fadeInRight;
+    -o-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+}
+@-webkit-keyframes fadeInRight {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateX(20px)
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: translateX(0)
+	}
+}
+
+@-moz-keyframes fadeInRight {
+	0% {
+		opacity: 0;
+		-moz-transform: translateX(20px)
+	}
+
+	100% {
+		opacity: 1;
+		-moz-transform: translateX(0)
+	}
+}
+
+@-o-keyframes fadeInRight {
+	0% {
+		opacity: 0;
+		-o-transform: translateX(20px);
+	}
+
+	100% {
+		opacity: 1;
+		-o-transform: translateX(0);
+	}
+}
+
+@keyframes fadeInRight {
+	0% {
+		opacity: 0;
+		transform: translateX(20px)
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0)
+	}
+}
+
+/*左侧导航*/
+.caret {
+    width: 0;
+    height: 0;
+    margin-left: 8px;
+    vertical-align: middle;
+    border-top: 5px solid;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.app, .app body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.page-main {height:100%;position: static;}	
+.page-left{ position: absolute;
+    top:55px;
+    left: 0;bottom:0;
+   width:208px;}
+
+.navbox{
+    position: relative;
+    width:198px; background:#38424d;}
+.navbox .toplink{ line-height:58px; padding-left:38px; color:#fff; margin-bottom:10px; background:#67ad03; display:block; font-size:18px; font-weight:bold}
+.navbox li h3{ height:60px; cursor:pointer; display:block; line-height:60px; padding:0 4px 0 38px; background:#2a343e; font-size:18px; color:#fff; font-weight:bold}
+.navbox li h3 .apellation{ width:85px; display:inline-block}
+.navbox li h3 .caret{ display:inline-block;border-top-color:#6d7782;border-bottom-color: #6d7782;}
+.navbox li h3.cur .caret{-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);transform:rotate(180deg);-webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    transition: all 0.4s linear;}
+.navbox li ul li a{ height:34px; display:block; outline:none;padding:0 0 0 32px; border-left:4px #38424d solid; line-height:34px; color:#727b86; font-size:14px;-webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;}
+.navbox li ul{ padding-bottom:4px}
+.navbox li .iconfont{ width:25px; margin-right:16px;font-size:18px; text-align:center; display:inline-block;}
+
+.navbox li ul li.yizhuang a{ color:#fff}
+.navbox li ul li a:hover,.navbox li ul li a.current{ color:#67ad03; border-left:4px #67ad03 solid; background:#2a343e}
+.navbox li ul li a:hover .iconfont,.navbox li ul li.yizhuang a.current .iconfont{color:#67ad03;}
+.navbox li ul li.yizhuang .iconfont{ color:#fff;}
+
+/*.navbox li ul li .ico01{display:inline-block; vertical-align:middle; margin-right:18px;-webkit-transition:background .4s ease-in-out;
+    -moz-transition:background .4s ease-in-out;
+    -ms-transition:background .4s ease-in-out;
+    -o-transition:background .4s ease-in-out;
+    transition:background .4s ease-in-out;}
+	
+.navbox li ul li.yizhuang .ico01{-webkit-transition:background .18s ease-in-out;
+    -moz-transition:background .18s ease-in-out;
+    -ms-transition:background .18s ease-in-out;
+    -o-transition:background .18s ease-in-out;
+    transition:background .18s ease-in-out;}	
+.ico01{background:url(../../images/admin/nav.png) no-repeat;}
+.ico01-txl{width:18px; height:18px; background-position:0 0;}
+.ico01-ggao{width:18px; height:18px; background-position:-28px 0px;}
+.ico01-shequ{width:18px; height:18px; background-position:-56px 1px;}
+.ico01-mpian{width:18px; height:18px; background-position:-84px 0px;}
+.ico01-photo{width:18px; height:18px; background-position:-112px 0px;}
+.ico01-jinian{width:18px; height:18px; background-position:-141px 0px;}
+.ico01-neikan{width:18px; height:18px; background-position:-168px 1px;}
+.ico01-peixun{width:18px; height:18px; background-position:-196px 0px;}
+.ico01-zhushou{width:18px; height:18px; background-position:-616px 0px;}
+.ico01-huiyi{width:18px; height:18px; background-position:-224px 0px;}
+.ico01-kaoqin{width:18px; height:18px; background-position:-253px 0px;}
+.ico01-email{width:18px; height:18px; background-position:-280px 0px;}
+.ico01-toupiao{width:18px; height:18px; background-position:-309px 0px;}
+.ico01-diaoyan{width:18px; height:18px; background-position:-336px 0px;}
+.ico01-calendar{width:18px; height:18px; background-position:-364px 0px;}
+.ico01-wxsq{width:18px; height:18px; background-position:-392px 0px;}
+.ico01-baoxiao{width:18px; height:18px; background-position:-420px 0px;}
+.ico01-shenpi{width:18px; height:18px; background-position:-448px 0px;}
+.ico01-liaogz{width:18px; height:18px; background-position:-532px 0px;}
+.ico01-wxsp{width:18px; height:18px; background-position:-448px 0px;}
+.ico01-wxqj{width:18px; height:18px; background-position:-475px 0px;}
+.ico01-wxbx{width:18px; height:18px; background-position:-420px 0px;}
+.ico01-lgz{width:18px; height:18px; background-position:-532px 0px;}
+.ico01-gzrb{width:18px; height:18px; background-position:-505px 0px;}
+.ico01-rw{width: 18px;height: 18px;background-position: -561px 0px;}
+.ico01-wq{width: 18px;height: 18px;background-position: -588px 0px;}
+.navbox li ul li.yizhuang .ico01-txl{background-position:0 -28px}
+.navbox li ul li.yizhuang .ico01-ggao,.navbox li ul li a.current .ico01-ggao,.navbox li a:hover .ico01-ggao{background-position:-28px -28px}
+.navbox li ul li.yizhuang .ico01-shequ,.navbox li ul li a.current .ico01-shequ,.navbox li a:hover .ico01-shequ{background-position:-56px -28px}
+.navbox li ul li.yizhuang .ico01-mpian,.navbox li ul li a.current .ico01-mpian,.navbox li a:hover .ico01-mpian{background-position:-84px -28px}
+.navbox li ul li.yizhuang .ico01-photo,.navbox li ul li a.current .ico01-photo,.navbox li a:hover .ico01-photo{background-position:-112px -28px}
+.navbox li ul li.yizhuang .ico01-jinian,.navbox li ul li a.current .ico01-jinian,.navbox li a:hover .ico01-jinian{background-position:-141px -28px}
+.navbox li ul li.yizhuang .ico01-neikan,.navbox li ul li a.current .ico01-neikan,.navbox li a:hover .ico01-neikan{background-position:-168px -28px}
+.navbox li ul li.yizhuang .ico01-peixun,.navbox li ul li a.current .ico01-peixun,.navbox li a:hover .ico01-peixun{background-position:-196px -28px}
+.navbox li ul li.yizhuang .ico01-zhushou,.navbox li ul li a.current .ico01-zhushou,.navbox li a:hover .ico01-zhushou{background-position:-616px -28px}
+.navbox li ul li.yizhuang .ico01-huiyi,.navbox li ul li a.current .ico01-huiyi,.navbox li a:hover .ico01-huiyi{background-position:-224px -28px}
+.navbox li ul li.yizhuang .ico01-kaoqin,.navbox li ul li a.current .ico01-kaoqin,.navbox li a:hover .ico01-kaoqin{background-position:-253px -28px}
+.navbox li ul li.yizhuang .ico01-email,.navbox li ul li a.current .ico01-email,.navbox li a:hover .ico01-email{background-position:-280px -28px}
+.navbox li ul li.yizhuang .ico01-toupiao,.navbox li ul li a.current .ico01-toupiao,.navbox li a:hover .ico01-toupiao{background-position:-309px -28px}
+.navbox li ul li.yizhuang .ico01-diaoyan,.navbox li ul li a.current .ico01-diaoyan,.navbox li a:hover .ico01-diaoyan{background-position:-336px -28px}
+.navbox li ul li.yizhuang .ico01-calendar,.navbox li ul li a.current .ico01-calendar,.navbox li a:hover .ico01-calendar{background-position:-364px -28px}
+.navbox li ul li.yizhuang .ico01-wxsq,.navbox li ul li a.current .ico01-wxsq,.navbox li a:hover .ico01-wxsq{background-position:-392px -28px}
+.navbox li ul li.yizhuang .ico01-wxsp,.navbox li ul li a.current .ico01-wxsp,.navbox li a:hover .ico01-wxsp{background-position:-448px -28px}
+.navbox li ul li.yizhuang .ico01-wxqj,.navbox li ul li a.current .ico01-wxqj,.navbox li a:hover .ico01-wxqj{background-position:-475px -28px}
+.navbox li ul li.yizhuang .ico01-wxbx,.navbox li ul li a.current .ico01-wxbx,.navbox li a:hover .ico01-wxbx{background-position:-420px -28px}
+.navbox li ul li.yizhuang .ico01-lgz,.navbox li ul li a.current .ico01-lgz,.navbox li a:hover .ico01-lgz{background-position:-532px -28px}
+.navbox li ul li.yizhuang .ico01-gzrb,.navbox li ul li a.current .ico01-gzrb,.navbox li a:hover .ico01-gzrb{background-position:-505px -28px}
+.navbox li ul li.yizhuang .ico01-wq,.navbox li ul li a.current .ico01-wq,.navbox li a:hover .ico01-wq{background-position:-588px -28px}
+.navbox li ul li.yizhuang .ico01-rw,.navbox li ul li a.current .ico01-rw,.navbox li a:hover .ico01-rw{background-position:-561px -28px}
+/*hover
+.navbox li ul li a.current .ico01-ggao,.navbox li a:hover .ico01-ggao,.navbox li.yizhuang a:hover .ico01-ggao{background-position:-28px -51px}
+.navbox li ul li a.current .ico01-txl,.navbox li.yizhuang a:hover .ico01-txl,.navbox li.yizhuang a:hover .ico01-txl{background-position:0 -51px}
+.navbox li ul li a.current .ico01-shequ,.navbox li a:hover .ico01-shequ,.navbox li.yizhuang a:hover .ico01-shequ{background-position:-56px -51px}
+.navbox li ul li a.current .ico01-mpian,.navbox li a:hover .ico01-mpian,.navbox li.yizhuang a:hover .ico01-mpian{background-position:-84px -51px}
+.navbox li ul li a.current .ico01-photo,.navbox li a:hover .ico01-photo,.navbox li.yizhuang a:hover .ico01-photo{background-position:-112px -51px}
+.navbox li ul li a.current .ico01-jinian,.navbox li a:hover .ico01-jinian,.navbox li a:hover .ico01-jinian{background-position:-141px -51px}
+.navbox li ul li a.current .ico01-neikan,.navbox li a:hover .ico01-neikan,.navbox li.yizhuang a:hover .ico01-neikan{background-position:-168px -51px}
+.navbox li ul li a.current .ico01-peixun,.navbox li a:hover .ico01-peixun,.navbox li.yizhuang a:hover .ico01-peixun{background-position:-196px -51px}
+.navbox li ul li a.current .ico01-zhushou,.navbox li a:hover .ico01-zhushou,.navbox li.yizhuang a:hover .ico01-zhushou{background-position:-616px -51px}
+.navbox li ul li a.current .ico01-huiyi,.navbox li a:hover .ico01-huiyi,.navbox li.yizhuang a:hover .ico01-huiyi{background-position:-224px -51px}
+.navbox li ul li a.current .ico01-kaoqin,.navbox li a:hover .ico01-kaoqin,.navbox li.yizhuang a:hover .ico01-kaoqin{background-position:-253px -51px}
+.navbox li ul li a.current .ico01-email,.navbox li a:hover .ico01-email,.navbox li.yizhuang a:hover .ico01-email{background-position:-280px -51px}
+.navbox li ul li a.current .ico01-toupiao,.navbox li a:hover .ico01-toupiao,.navbox li.yizhuang a:hover .ico01-toupiao{background-position:-309px -51px}
+.navbox li ul li a.current .ico01-diaoyan,.navbox li a:hover .ico01-diaoyan,.navbox li.yizhuang a:hover .ico01-diaoyan{background-position:-336px -51px}
+.navbox li ul li a.current .ico01-calendar,.navbox li a:hover .ico01-calendar,.navbox li.yizhuang a:hover .ico01-calendar{background-position:-364px -51px}
+.navbox li ul li a.current .ico01-wxsq,.navbox li a:hover .ico01-wxsq,.navbox li.yizhuang a:hover .ico01-wxsq{background-position:-392px -51px}
+.navbox li ul li a.current .ico01-wxsp,.navbox li a:hover .ico01-wxsp,.navbox li.yizhuang a:hover .ico01-wxsp{background-position:-448px -51px}
+.navbox li ul li a.current .ico01-wxqj,.navbox li a:hover .ico01-wxqj,.navbox li.yizhuang a:hover .ico01-wxqj{background-position:-475px -51px}
+.navbox li ul li a.current .ico01-wxbx,.navbox li a:hover .ico01-wxbx,.navbox li.yizhuang a:hover .ico01-wxbx{background-position:-420px -51px}
+.navbox li ul li a.current .ico01-lgz,.navbox li a:hover .ico01-lgz,.navbox li.yizhuang a:hover .ico01-lgz{background-position:-532px -51px}
+.navbox li ul li a.current .ico01-gzrb,.navbox li a:hover .ico01-gzrb,.navbox li.yizhuang a:hover .ico01-gzrb{background-position:-505px -51px}
+.navbox li ul li a.current .ico01-wq,.navbox li a:hover .ico01-wq,.navbox li.yizhuang a:hover .ico01-wq{background-position:-588px -51px}
+.navbox li ul li a.current .ico01-rw,.navbox li a:hover .ico01-rw,.navbox li.yizhuang a:hover .ico01-rw{background-position:-561px -51px}
+*/
+/*码*/
+.pubnumber{ text-align:center; color:#727b86; padding:22px 0; margin:24px 14px 0;border-top:1px #464849 dashed}
+.pubnumber p{ padding:3px 0}
+/*主体*/
+.page-content{ margin-left:198px; height:100%;}
+.page-content .contentshadow{ position: fixed; content:""; z-index:1;bottom: 0;top:0;background:url(../../images/admin/grayshadow.png) 0 0 repeat-y; width:10px}
+.page-content .contentbg{ position: fixed; content:""; z-index:-2;bottom: 0;top:0;background:#fff; width:100%}
+#page-iframe{ height: 100%;width:100%; z-index:0;border: 0;}
+.cont-column-line{position: fixed;content: "";z-index: 1;bottom: 0;top: 0;border-left:1px #eaeaea solid}
+.thirdland .cont-column-line{ z-index:-2}
+.xufeitip{
+    width: 600px;
+    height:140px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    margin-left: -300px;
+    margin-top: 360px
+}
+.cry{
+    width: 270px;
+    height: 140px;
+    background: url('../../images/admin/cry.jpg');
+}
+.xftip{
+    margin-left:315px;
+}
+.tiphead{
+    font-size: 20px;
+    color: #fc742a;
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+.lxfs{
+    font-size: 14px;
+    color: #666;
+    line-height: 22px
+}
+.lxfs span{
+    color: #0078b6
+}
+/*分栏*/
+.secondbar,.thirdbar {
+    width: 120px;
+    float: left;
+}
+
+.secondland,.thirdland {
+    margin-left: 120px;
+    position: relative;
+}
+
+.clearfix:after {
+    display: table;
+    clear: both
+}
+
+.barmenu {
+    margin-top: 20px
+}
+
+.barmenu i {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    color: #fff
+}
+.landtitle{background:#fff}
+.barmenu li,.barmenu li a,.landtitle {
+    position: relative
+}
+
+.barmenu li a {
+    display: block;
+    height: 40px;
+    text-indent: 20px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #333
+}
+.barmenu li a:hover,.barmenu li.cur a {
+    background: #eaeaea
+}
+.barmenu li a:hover i,.barmenu li.cur i {
+    color: #888
+}
+.deliver {
+    display: block;
+    height: 100%;
+    width: 1px;
+    background: #eaeaea;
+    position: fixed;
+    top: 0;
+    left: 320px;
+    z-index: 10
+}
+
+.secondland .deliver {
+    left: 440px;
+    top: 60px
+}

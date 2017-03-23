@@ -1,0 +1,121 @@
+/* add by lichuangjing at 2016-01-07 */
+.w240 {
+    width: 240px;
+}
+
+.fileupload {
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.fileupload ul {
+    font-size: 0;
+    list-style: none;
+}
+
+.fileupload ul li.pic {
+    position: relative;
+    background: url(../images/loading.gif) no-repeat center center;
+}
+.fileupload ul li {
+    height: 60px !important;
+    width: 60px !important;
+    margin: 0 20px 10px 0 !important;
+}
+.fileupload ul li {
+    height: 60px !important;
+    width: 60px !important;
+    margin: 0 14px 10px 0 !important;
+    border: 2px #fff solid;
+}
+.fileupload ul li {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+.fileupload ul li img {
+    height: 60px !important;
+    width: 60px !important;
+}
+.fileupload ul li img {
+    height: 60px !important;
+    width: 60px !important;
+}
+.fileupload ul li img {
+    width: 80px;
+    height: 80px;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.br-hui-dashed{
+    border-right: #eaeaea dashed 1px;
+}
+
+/*入职员工纪念详情*/
+.ygbd-bd {
+    height: 161px;
+}
+.ygbd-bd {
+    border-top: 1px solid #ddd;
+    border-right: 2px solid #efefef;
+    border-bottom: 1px solid #ddd;
+    border-left: 2px solid #efefef;
+}
+
+.ygbd-tag {
+    color: #fff;
+    width: 56px;
+    height: 16px;
+    background: #fd5454;
+    position: absolute;
+    top: 7px;
+    top: -11px\9;
+    right: -12px;
+    right: -16px\9;
+    filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.70710678, M12=-0.70710678, M21=0.70710678, M22=0.70710678);
+    /*filter: Alpha(Opacity=60)\9\0;*/
+    transform: rotate(45deg);
+    /*-ms-transform: rotate(45deg);*/
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+}
+.br100 {
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+}
+.display-bl {
+    display: block;
+}
+
+.w100{
+    width: 100px;
+}
+
+.staff-detail-head-container{
+    width: 150px;
+}
+
+.staff-detail-head-container > a{
+    display: inline-block;
+}
+
+/*小屏宽度媒体查询*/
+@media (max-width: 1366px)  {
+    .col-sm-2{
+        width: 20% !important;
+    }
+    .col-sm-10{
+        width: 80% !important;
+        padding-left: 0px !important;
+    }
+    .ts-range{
+        padding-bottom: 10px;
+    }
+}

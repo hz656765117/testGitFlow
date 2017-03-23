@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hz.business.classMoney.base.dao.ClassMoneyMapper" >
+  <resultMap id="BaseResultMap" type="com.hz.business.classMoney.base.pojo.ClassMoney" >
+    <id column="class_money_key" property="classMoneyKey" jdbcType="VARCHAR" />
+    <result column="money" property="money" jdbcType="DOUBLE" />
+    <result column="datetime" property="datetime" jdbcType="DATE" />
+    <result column="commonts" property="commonts" jdbcType="VARCHAR" />
+    <result column="type" property="type" jdbcType="VARCHAR" />
+    <result column="class_key" property="classKey" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    class_money_key, money, datetime, commonts, type, class_key
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.hz.business.classMoney.base.pojo.ClassMoneyExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    'true' as QUERYID,
+    <include refid="Base_Column_List" />
+    from jwxt_class_money
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from jwxt_class_money
+    where class_money_key = #{classMoneyKey,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from jwxt_class_money
+    where class_money_key = #{classMoneyKey,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.hz.business.classMoney.base.pojo.ClassMoneyExample" >
+    delete from jwxt_class_money
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.hz.business.classMoney.base.pojo.ClassMoney" >
+    insert into jwxt_class_money (class_money_key, money, datetime, 
+      commonts, type, class_key
+      )
+    values (#{classMoneyKey,jdbcType=VARCHAR}, #{money,jdbcType=DOUBLE}, #{datetime,jdbcType=DATE}, 
+      #{commonts,jdbcType=VARCHAR}, #{type,jdbcType=VARCHAR}, #{classKey,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.hz.business.classMoney.base.pojo.ClassMoney" >
+    insert into jwxt_class_money
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="classMoneyKey != null" >
+        class_money_key,
+      </if>
+      <if test="money != null" >
+        money,
+      </if>
+      <if test="datetime != null" >
+        datetime,
+      </if>
+      <if test="commonts != null" >
+        commonts,
+      </if>
+      <if test="type != null" >
+        type,
+      </if>
+      <if test="classKey != null" >
+        class_key,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="classMoneyKey != null" >
+        #{classMoneyKey,jdbcType=VARCHAR},
+      </if>
+      <if test="money != null" >
+        #{money,jdbcType=DOUBLE},
+      </if>
+      <if test="datetime != null" >
+        #{datetime,jdbcType=DATE},
+      </if>
+      <if test="commonts != null" >
+        #{commonts,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null" >
+        #{type,jdbcType=VARCHAR},
+      </if>
+      <if test="classKey != null" >
+        #{classKey,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.hz.business.classMoney.base.pojo.ClassMoneyExample" resultType="java.lang.Integer" >
+    select count(*) from jwxt_class_money
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update jwxt_class_money
+    <set >
+      <if test="record.classMoneyKey != null" >
+        class_money_key = #{record.classMoneyKey,jdbcType=VARCHAR},
+      </if>
+      <if test="record.money != null" >
+        money = #{record.money,jdbcType=DOUBLE},
+      </if>
+      <if test="record.datetime != null" >
+        datetime = #{record.datetime,jdbcType=DATE},
+      </if>
+      <if test="record.commonts != null" >
+        commonts = #{record.commonts,jdbcType=VARCHAR},
+      </if>
+      <if test="record.type != null" >
+        type = #{record.type,jdbcType=VARCHAR},
+      </if>
+      <if test="record.classKey != null" >
+        class_key = #{record.classKey,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update jwxt_class_money
+    set class_money_key = #{record.classMoneyKey,jdbcType=VARCHAR},
+      money = #{record.money,jdbcType=DOUBLE},
+      datetime = #{record.datetime,jdbcType=DATE},
+      commonts = #{record.commonts,jdbcType=VARCHAR},
+      type = #{record.type,jdbcType=VARCHAR},
+      class_key = #{record.classKey,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.hz.business.classMoney.base.pojo.ClassMoney" >
+    update jwxt_class_money
+    <set >
+      <if test="money != null" >
+        money = #{money,jdbcType=DOUBLE},
+      </if>
+      <if test="datetime != null" >
+        datetime = #{datetime,jdbcType=DATE},
+      </if>
+      <if test="commonts != null" >
+        commonts = #{commonts,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null" >
+        type = #{type,jdbcType=VARCHAR},
+      </if>
+      <if test="classKey != null" >
+        class_key = #{classKey,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where class_money_key = #{classMoneyKey,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.hz.business.classMoney.base.pojo.ClassMoney" >
+    update jwxt_class_money
+    set money = #{money,jdbcType=DOUBLE},
+      datetime = #{datetime,jdbcType=DATE},
+      commonts = #{commonts,jdbcType=VARCHAR},
+      type = #{type,jdbcType=VARCHAR},
+      class_key = #{classKey,jdbcType=VARCHAR}
+    where class_money_key = #{classMoneyKey,jdbcType=VARCHAR}
+  </update>
+</mapper>

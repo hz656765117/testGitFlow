@@ -1,0 +1,28 @@
+/**微加自定义皮肤**/
+html #layui_layer_skinseaningstylecss{display:none; position: absolute; width:1989px;}
+body .weijia.layui-layer-dialog{min-width:360px}
+body .weijia.layui-layer-dialog .layui-layer-content{ padding:50px 20px 30px; text-align: center; font-size: 16px; color: #333}
+body .weijia .layui-layer-title{ padding: 0 60px 0 0px;background-color: #fff;padding-bottom: 10px; margin:12px 15px 0;
+    color: #333;
+    font-size: 14px;
+    border-bottom: 1px solid #eaeaea;}
+body .weijia .layui-layer-setwin{top:0px;right:4px; width: 40px; height: 30px}
+body .weijia .layui-layer-setwin .layui-layer-close1,body .weijia .layui-layer-setwin .layui-layer-close2{position: absolute;right:0px;top:0;width: 40px;
+height: 30px;  background: url(btn-close.png) no-repeat !important;}
+body .weijia .layui-layer-btn{ text-align: center; padding-bottom:40px}
+body .weijia .layui-layer-btn a{ font-size:16px;padding: 0 38px; height:40px;line-height:40px;min-width:120px;min-width: auto\9; min-width: auto\9;border-radius: 4px; color: #999;background: -webkit-linear-gradient(top,#fff,#efefef);
+    background: -moz-linear-gradient(top,#fff,#efefef);
+    background: -o-linear-gradient(top,#fff,#efefef);
+    background: -ms-linear-gradient(top,#fff,#efefef);
+    background: linear-gradient(top,#fff,#efefef);}
+body .weijia .layui-layer-btn a:hover{ background: -webkit-linear-gradient(top,#efefef,#fff);
+    background: -moz-linear-gradient(top,#efefef,#fff);
+    background: -o-linear-gradient(top,#efefef,#fff);
+    background: -ms-linear-gradient(top,#efefef,#fff);
+    background: linear-gradient(top,#efefef,#fff);
+    border-color: #ddd;}
+body .weijia .layui-layer-btn .layui-layer-btn0{border-color: #639916;background: #67ad03; color: #fff}
+body .weijia .layui-layer-btn .layui-layer-btn0:hover,body .weijia .layui-layer-btn .layui-layer-btn0:active{background: #7ac128;border-color: #69ab1f;}
+body .weijia.weijia-msg{min-width:150px;background-color:#000; filter:alpha(opacity=60); background-color: rgba(0,0,0,0.6); color: #fff; border:none; border-radius: 4px;}
+body .weijia.weijia-msg .layui-layer-content{padding:12px 25px; font-size:14px;color: #fff; text-align:center;}
+body .weijia.layui-layer-page .layui-layer-content{ overflow:visible;}

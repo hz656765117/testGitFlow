@@ -1,0 +1,113 @@
+*{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;}
+html{ height:100%; width:100%; -webkit-text-size-adjust: 100%;	-ms-text-size-adjust: 100%;}
+body{height:100%; width:100%;}
+.calendar{width:100%; background:#f1f1f1; padding:10px 0px 0; margin-bottom:10px;color:#9f9f9f; font-size:12px;  float:left;  background:#fff;}
+.calendar .weekdiv{ line-height:30px; float:left;border-width: 0px 0px 1px 0px;  color:#999; width:100%;}
+.calendar .weekdiv >span{ display:block; float:left; text-align:center;border-bottom:1px #ccc solid;border-top:1px #ccc solid; }
+.calendar .btndiv{ line-height:30px; padding:0 0 15px; width:100%; float:left; float:left;}
+.calendar .btndiv >span{ display:block; float:left; text-align:center;}
+.calendar .btndiv >a{ display:block; float:left;  text-align:center;width:10%; cursor:pointer; font-size:25px;font-weight:bold; color:#ccc}
+.calendar .btndiv >a.gray{ color:#fff;}
+.calendar .btndiv >.text{ width:80%; color:#ff9900; font-weight:bold; font-size:17px;}
+.calendar ul{ list-style:none; width:100%; float:left;}
+.calendar ul li{ float:left; text-align:center; height:41px; border-bottom:1px #ccc solid; border-left:none; color:#525252; }
+/*对周六周日进行灰色标记*/
+/*.calendar ul li:nth-child(7n+1){ color:#ccc}
+.calendar ul li:nth-child(7n+7){ color:#ccc}   */
+.calendar ul li.gray{ color:#ccc}
+.calendar ul li>span{ display:block; width:32px; height:31px;border-radius:50%;  margin:5px auto;line-height:31px;  font-size:16px}
+.calendar ul li.on>span{  background:url(../images/circle.png) no-repeat; background-size:65px;  background-position:-41px 0; }
+.calendar ul li.on1>span{  background:url(../images/circle.png) no-repeat; background-size:65px;  background-position:0px 0;  }
+.calendar ul li.on2>span{  background:url(../images/circle.png) no-repeat; background-size:65px;  background-position:-32px 0;  }
+.calendar ul li.on3>span{  background:url(../images/circle.png) no-repeat; background-size:65px;  background-position:2px -34px;  }
+.calendar ul li.on4>span{  background:url(../images/circle.png) no-repeat; background-size:65px;  background-position:-34px -34px;  }
+.calendar ul li.on5{ color:#67ad03}
+.calendar ul li.on6>span{  background:url(../images/circle.png) no-repeat; background-size:65px;  background-position:0px -67px;  }
+.calendar ul li.on7>span{  background:url(../images/circle.png) no-repeat; background-size:65px;  background-position:-32px -67px;  }
+.calendar ul li.checked>span{background:#67ad03 !important; color:#fff}
+ /**/
+.huang{color:#ff9900}
+.lh48{ line-height:48px}
+.hui07{color:#bbb}
+.bg-hui07{ background:#f3f4f6}
+
+/*2015-12-22*/
+.signmask {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.signdialog {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    width: 82%;
+    background: #fff;
+    border-radius: 5px;
+    padding-top: 50px;
+    padding-bottom: 15px;
+    z-index: 10;
+}
+.signcircle{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    border-radius: 50%;
+    left: 50%;
+    top: -40px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+.signresult{
+    width: 70px;
+    height: 70px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.signsuccess {
+    background-image: url("../images/icon_pop_status1.png");
+    background-size: 70px;
+}
+.signfailed {
+    background: url("../images/icon_pop_status3.png");
+    background-size: 70px;
+}
+.signabnormal {
+    background: url("../images/icon_pop_status2.png");
+    background-size: 70px;
+}
+
+.signtitle{
+    color: #666;
+    text-align: center;
+    font-size: 20px;
+}
+.signinfo{
+    font-size: 12px;
+    color: #999;
+    line-height: 14px;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 16px;
+}
+.signconfirm{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.signbtn{
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+    font-size:16px;
+    background-color: #64be50;
+    border-radius: 5px;
+}

@@ -1,0 +1,106 @@
+/*×¢²á*/
+#regist{
+    width: 720px;
+    margin: 0 auto;
+}
+#regist h2{ font-size: 36px; color: #333; font-weight: normal; text-align: center; padding: 55px 0 0}
+#regist .section {
+    margin: 0;
+    overflow: hidden;
+    padding-top: 40px;
+}
+#regist .section p{
+    float: left;
+    text-align: center;
+    color: #FFFFFF;
+    height: 30px;
+    line-height: 30px;
+    width: 360px;
+}
+.step1{background: url("../images/first01.jpg")}
+.step2{background: url("../images/first02.jpg")}
+.step3{background: url("../images/sec02.jpg")}
+.regform{
+    width: 420px;
+    float: left;
+}
+.regtip{
+    width: 300px;
+    float: left;
+}
+.h910{
+    height: 910px;
+}
+.w210{width: 185px;}
+.bdnone{
+    border: none!important;
+}
+.close-bg{
+    padding: 10px;
+    background: url("../images/close.png") no-repeat;
+}
+.tips{
+    width: 230px;
+    height: 50px;
+    padding-top: 36px;
+    position: absolute;
+    z-index: 2;
+    margin-left: 460px;
+    margin-top: -90px;
+}
+.pt45{padding-top: 45px}
+.pt27{padding-top: 27px}
+.dagou{
+    height: 18px;
+    width: 18px;
+    background: url("../images/gou.gif") no-repeat;
+    position: absolute;
+    left:0px;
+    top: 53px;
+    display: none;
+}
+.t45{top:45px}
+.show{display: block}
+.input--error{
+    color:#ff5050;
+}
+
+.selection{
+    padding:14px 18px;
+    width: 420px;
+    height: 50px;
+    background: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.w360{width: 480px}
+.ml7{
+    margin-left: 7px;
+}
+.clearfix:after{content:¡±;display:table;clear:both}
+.clearfix{*zoom:1}
+.mtf40{
+    margin-top: -40px;
+}
+.mtf70{
+    margin-top: -80px;
+}
+
+.correct .tips{
+    padding-left: 300px;
+}
+.correct .dagou{
+    display: block;
+}
+.error .dagou{
+    display: none;
+}
+
+.error p{
+    color: #ff5050;
+}
+.error .ui-input:focus{ border:1px #ff5050 solid}
+.error .ui-input:focus + .input-label,.error.input-label{
+    -webkit-transform: translate(0, 1em);transform: translate(0, 1em); color:#ff5050; margin-left:-22px; font-size:14px;
+}

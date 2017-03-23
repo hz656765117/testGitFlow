@@ -1,0 +1,22 @@
+@charset "utf-8" ;
+.feedback-form-wrapper {
+	height: 671px;
+	width: 100%;
+	background: url(../images/feedback.jpg) no-repeat center center;
+}
+.feedback-form {
+	width: 600px;
+	margin: 0 auto;
+	padding: 192px 0 0 0;
+}
+.feedback-form p {
+	padding: 5px;
+}
+.feedback-form label {
+	font-size: 0;
+	line-height: 32px;
+}
+.feedback-form input[type="text"], .feedback-form textarea { font-family: "Microsoft YaHei", Arial; font-size:14px; width: 378px; padding: 5px 10px; line-height: 28px; border:1px #dddddd solid; border-radius: 4px; }
+.feedback-form input[type="text"] {height: 28px; border:1px #dddddd solid; vertical-align: top;}
+.feedback-form textarea { height: 128px; vertical-align: top;}
+.feedback-form label > span { display: inline-block; width: 120px; text-align: right; font-size: 14px; line-height: 40px;}

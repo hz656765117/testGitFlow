@@ -1,0 +1,36 @@
+/*∞Ô÷˙“≥√Ê*/
+.qa{border-bottom: 1px dashed #dddddd}
+.qa h2{height: 58px;line-height: 58px;font-size: 18px;color:#666;font-weight: normal;padding-left: 30px;position: relative}
+.qa .answer{padding-left: 30px;font-size: 14px;color: #666666;line-height: 23px;padding-bottom: 20px;position: relative;display: none}
+.qa h2 a{display: block;width: 100%;color:#333}
+.qa h2 a:hover{color:#67ad03}
+.qa h2 a.lvse{color:#67ad03}
+.qa h2 .qs{display: block;width:20px;height: 18px;position: absolute;left: 0 ;top:21px;background: url("../images/question.png") no-repeat}
+.qa p .as{display: block;width:20px;height: 18px;position: absolute;top:5px;left: 0 ;background: url("../images/answer.png") no-repeat}
+.qa .cur{display: block}
+.guidetit{position: relative}
+.guidetit h2{height: 58px;line-height: 58px;font-size: 18px;border-bottom: 1px dashed #dddddd;color: #333}
+.guidetit a{position: absolute;right: 0;top: 14px;padding:8px 17px;border: 1px solid #67ad03;color:#67ad03;border-radius: 5px;}
+.mt60{margin-top: 60px }
+.guidepic{padding-left: 30px;padding-bottom: 20px;display: none}
+.guidepic img{margin-right: 15px;margin-bottom: 15px}
+
+.cont-fl{width:178px;}
+.newnav{display: none}
+.newnav li i{vertical-align: -3px;display: inline-block;}
+.wenda{border:1px solid #ddd}
+.wenda h2{padding:0 0 0 20px;color:#333; font-size:14px;height:54px;line-height: 54px;border-top:1px dashed #ddd;position: relative}
+
+.wenda h2 a{display: inline-block;width: 100%}
+.wenda h2 a:hover{color: #67ad03}
+.wenda .focus a{color:#67ad03}
+.wenda .focus{color:#67ad03;}
+.wenda h2 span{display: block;position: absolute;right: 14px;width: 12px;height: 12px;bottom: 22px}
+.tubiao{background: url("../images/zhishiqi.png") no-repeat}
+.tubiao2{background: url("../images/zhishiqi2.png") no-repeat}
+.tubiao3{background: url("../images/zhishiqi3.png") no-repeat}
+.cont-fl ul:last-child{ margin-bottom:2px}
+.cont-fl li a{ padding-left:39px; color:#666;line-height:40px;font-size:14px; display:block; -moz-transition: all 0.2s linear;-webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;transition: all 0.2s linear;}
+.cont-fl li a:hover,.cont-fl li a.cur{color: #67ad03}
+.cont-fr{width:798px;}

@@ -1,0 +1,163 @@
+/* 通讯录 - 名片管理 */
+.bsns_card {
+    margin-left: 30px
+}
+
+.bsns_card_left {
+    float: left;
+    padding-top: 40px;
+}
+
+.bsns_card_right {
+    margin-left: 350px;
+}
+
+.bsns_card_right h2 {
+    color: #4c4c4c;
+    font-size: 16px;
+    margin-left: 10px;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.bsns_card_list {
+    width: 450px;
+}
+
+.bsns_card_list li {
+    float: left;
+    margin: 5px 10px;
+}
+
+.bsns_card_list li a {
+    display: block;
+    border: 2px #fff solid;
+}
+
+.bsns_card_list li a:hover {
+    border: 2px #e68b02 solid;
+}
+
+/* 通讯录 - 标签 */
+.ztree li span.button.edit {
+    position: relative;
+    padding: 0px 5px 0 0;
+    background: url(http://www.51vj.cn/images/arrow-b.png) no-repeat;
+    background-position: 0 6px
+}
+
+.inputfile01 {
+    width: 260px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    filter: alpha(opacity:0);
+    font-size: 100px;
+}
+
+.menu-caozuo {
+    width: 128px;
+    border: 1px #e0edf8 solid;
+}
+
+.menu-caozuo li {
+    width: 128px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.menu-caozuo a {
+    display: block;
+    color: #666;
+    width: 116px;
+    margin: 0 1px;
+    padding-left: 10px;
+}
+
+.w75 {
+    width: 75px;
+}
+
+.tabs a {
+    width: 180px !important;
+}
+
+.w80 {
+    width: 80px;
+}
+
+.w150 {
+    width: 150px;
+}
+
+.w340 {
+    width: 340px;;
+}
+
+.w520 {
+    width: 520px;
+}
+
+.cursor-pointer {
+    cursor: pointer;;
+}
+
+.tag-list {
+    max-height: 300px;
+}
+
+.tag-list-cur a {
+    background-color: #e0edf8;
+}
+
+.main-tag-list-cur a {
+    background-color: #e0edf8;
+}
+
+/* 通讯录 - 组织架构 */
+.ztree li span.button.edit {
+    position: relative;
+    padding: 0px 5px 0 0;
+    background: url(http://www.51vj.cn/images/arrow-b.png) no-repeat;
+    background-position: 0 6px
+}
+
+.inputfile01 {
+    width: 260px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    filter: alpha(opacity:0);
+    font-size: 100px;
+}
+
+.menu-caozuo {
+    width: 128px;
+    border: 1px #e0edf8 solid;
+}
+
+.menu-caozuo li {
+    width: 128px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.menu-caozuo a {
+    display: block;
+    color: #666;
+    width: 116px;
+    margin: 0 1px;
+    padding-left: 10px;
+}
+
+.w75 {
+    width: 75px;
+}
+
+.tabs a {
+    width: 180px !important;
+}

@@ -1,0 +1,113 @@
+@charset "utf-8";
+.navbox li ul.accountlist li a{
+    padding-left: 60px;
+}
+.avatar{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+.avatar img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+.editavatar{
+    padding: 20px 0;
+    margin-bottom: 7px;
+    background: #2a343e;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+.editavatar img {
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+}
+
+.contentheader {
+    height: 50px;
+    line-height: 50px;
+    background: #f3f7fb;
+    border-bottom: 1px solid #eaeaea;
+    border-top: 1px solid #eaeaea;
+    padding-left: 40px;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+.accountsetting {
+
+    position: absolute;
+    left: 50%;
+    top:100px;
+    margin-left:-260px;
+}
+
+#alertdiv1{
+    left: 37px!important;
+    top: 60px!important;
+}
+#alertdiv2{
+    left:208.5px!important;
+    top: 130px!important;
+}
+
+
+.icon-caozuo{background:url(../../images/account/caozuo.png) no-repeat;}
+.icon-bg{background:url(../../images/account/icon.png) no-repeat;}
+
+.ico-del{width:15px; height:15px;background-position:-1px -205px; overflow:hidden;transition: all .2s ease;}
+.ico-del:hover{background-position:-1px -229px;}
+.ico-del-link{
+    background-position: 0 -376px;
+    padding-left: 18px;
+    cursor: pointer;
+}
+
+.ico-edit{background-position:-1px -55px;width:15px; height:15px; overflow:hidden;transition: all .2s ease;}
+.ico-edit:hover{background-position:-1px -79px;}
+
+.ico-paixu{background-position:-1px -104px;width:15px; height:15px; overflow:hidden;transition: all .2s ease;}
+.ico-paixu:hover{background-position:-1px -130px;}
+
+.changepass{
+    width: 459px;
+    position: absolute;
+    left: 50%;
+    margin-left: -260px;
+    top: 120px;
+}
+.changepass label span{
+    color:#cb3932
+}
+.changepass input{
+    border-radius:4px;
+}
+.z3{
+    z-index: 3;
+}
+.modallink{
+    border: 0;
+    outline: none;
+}
+.modallink:visited{
+    border: 0;
+    outline: none;
+}
+.modallink:active{
+    border: 0;
+    outline: none;
+}
+.mt40{
+    margin-top: 40px;
+}
+.mr34{
+    margin-right: 34px;
+}
+.mt30{
+    margin-top: 30px;
+}

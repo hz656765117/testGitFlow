@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hz.business.classActivity.base.dao.ClassActivityStuMapper">
+  <resultMap id="BaseResultMap" type="com.hz.business.classActivity.base.pojo.ClassActivityStu">
+    <id column="activity_stu_key" jdbcType="INTEGER" property="activityStuKey" />
+    <result column="activity_key" jdbcType="VARCHAR" property="activityKey" />
+    <result column="student_key" jdbcType="VARCHAR" property="studentKey" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="delete_flag" jdbcType="INTEGER" property="deleteFlag" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    activity_stu_key, activity_key, student_key, create_time, delete_flag
+  </sql>
+  <select id="selectByExample" parameterType="com.hz.business.classActivity.base.pojo.ClassActivityStuExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    'true' as QUERYID,
+    <include refid="Base_Column_List" />
+    from jwxt_class_activity_stu
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from jwxt_class_activity_stu
+    where activity_stu_key = #{activityStuKey,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from jwxt_class_activity_stu
+    where activity_stu_key = #{activityStuKey,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.hz.business.classActivity.base.pojo.ClassActivityStuExample">
+    delete from jwxt_class_activity_stu
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.hz.business.classActivity.base.pojo.ClassActivityStu">
+    insert into jwxt_class_activity_stu (activity_stu_key, activity_key, student_key, 
+      create_time, delete_flag)
+    values (#{activityStuKey,jdbcType=INTEGER}, #{activityKey,jdbcType=VARCHAR}, #{studentKey,jdbcType=VARCHAR}, 
+      #{createTime,jdbcType=TIMESTAMP}, #{deleteFlag,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.hz.business.classActivity.base.pojo.ClassActivityStu">
+    insert into jwxt_class_activity_stu
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="activityStuKey != null">
+        activity_stu_key,
+      </if>
+      <if test="activityKey != null">
+        activity_key,
+      </if>
+      <if test="studentKey != null">
+        student_key,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="deleteFlag != null">
+        delete_flag,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="activityStuKey != null">
+        #{activityStuKey,jdbcType=INTEGER},
+      </if>
+      <if test="activityKey != null">
+        #{activityKey,jdbcType=VARCHAR},
+      </if>
+      <if test="studentKey != null">
+        #{studentKey,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="deleteFlag != null">
+        #{deleteFlag,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.hz.business.classActivity.base.pojo.ClassActivityStuExample" resultType="java.lang.Integer">
+    select count(*) from jwxt_class_activity_stu
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update jwxt_class_activity_stu
+    <set>
+      <if test="record.activityStuKey != null">
+        activity_stu_key = #{record.activityStuKey,jdbcType=INTEGER},
+      </if>
+      <if test="record.activityKey != null">
+        activity_key = #{record.activityKey,jdbcType=VARCHAR},
+      </if>
+      <if test="record.studentKey != null">
+        student_key = #{record.studentKey,jdbcType=VARCHAR},
+      </if>
+      <if test="record.createTime != null">
+        create_time = #{record.createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.deleteFlag != null">
+        delete_flag = #{record.deleteFlag,jdbcType=INTEGER},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update jwxt_class_activity_stu
+    set activity_stu_key = #{record.activityStuKey,jdbcType=INTEGER},
+      activity_key = #{record.activityKey,jdbcType=VARCHAR},
+      student_key = #{record.studentKey,jdbcType=VARCHAR},
+      create_time = #{record.createTime,jdbcType=TIMESTAMP},
+      delete_flag = #{record.deleteFlag,jdbcType=INTEGER}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.hz.business.classActivity.base.pojo.ClassActivityStu">
+    update jwxt_class_activity_stu
+    <set>
+      <if test="activityKey != null">
+        activity_key = #{activityKey,jdbcType=VARCHAR},
+      </if>
+      <if test="studentKey != null">
+        student_key = #{studentKey,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="deleteFlag != null">
+        delete_flag = #{deleteFlag,jdbcType=INTEGER},
+      </if>
+    </set>
+    where activity_stu_key = #{activityStuKey,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.hz.business.classActivity.base.pojo.ClassActivityStu">
+    update jwxt_class_activity_stu
+    set activity_key = #{activityKey,jdbcType=VARCHAR},
+      student_key = #{studentKey,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      delete_flag = #{deleteFlag,jdbcType=INTEGER}
+    where activity_stu_key = #{activityStuKey,jdbcType=INTEGER}
+  </update>
+</mapper>

@@ -1,0 +1,227 @@
+/* add by lichuanjing at 2016-1-6 */
+.photo-album-green-color{
+    color: #67ad03;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+/*相册轮播*/
+.ban {
+    width: 500px;
+    height: 615px;
+    position: relative;
+    overflow: hidden;
+    margin: 40px auto 0 auto;
+}
+
+.ban2 {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.ban2 ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.ban2 ul li {
+    width: 500px;
+    height: 500px;
+    line-height: 500px;
+    text-align: center;
+}
+
+.prev1 {
+    position: absolute;
+    top: 220px;
+    left: 20px;
+    width: 28px;
+    height: 51px;
+    z-index: 9;
+    cursor: pointer;
+}
+
+.next1 {
+    position: absolute;
+    top: 220px;
+    right: 20px;
+    width: 28px;
+    height: 51px;
+    z-index: 9;
+    cursor: pointer;
+}
+.min_pic {
+    padding-top: 10px;
+    width: 500px;
+}
+.num {
+    height: 82px;
+    overflow: hidden;
+    width: 430px;
+    position: relative;
+    float: left;
+}
+.num ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.num ul li.on {
+    border: 1px solid #F00;
+    padding: 0;
+}
+.num ul li {
+    width: 82px;
+    height: 82px;
+    margin-right: 5px;
+    padding: 1px;
+}
+
+/*修改相册*/
+.photo-list01 {
+    width: 837px;
+    border-bottom: 1px #eaeaea dashed;
+    padding-top: 20px;
+}
+.photo-list01 ul {
+    margin-right: -42px;
+    zoom: 1;
+    display: inline-block;
+}
+.photo-list01 li {
+    float: left;
+    display: inline;
+    margin: 0 19px 40px 0;
+    height: 140px;
+}
+.imghover {
+    position: relative;
+    width: 152px;
+    height: 114px;
+}
+.imghover .fm {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 36px;
+    height: 18px;
+    line-height: 17px;
+    text-align: center;
+    color: #fff;
+    background: #F60;
+}
+
+.imghover .sfm, .imghover .delete {
+    display: none;
+}
+.imghover{position:relative; width:152px; height:114px;}
+.imghover .sfm,.imghover .delete{ display:none}
+.imghover.cur .shade{position:absolute;left:0;top:0; width:152px; height:114px;background-color:rgba(0, 0, 0, 0.6); filter: progid:DXImageTransform.Microsoft.gradient( GradientType = 0,startColorstr ='#90000000',endColorstr ='#90000000')\9;}
+.imghover.cur .sfm{display:block; position:absolute;left:26px;top:37px; width:41px; height:40px;}
+.imghover.cur .delete{display:block;position:absolute;left:87px;top:37px; width:41px; height:40px;}
+.imghover .fm{ display:none; position:absolute;left:0;bottom:0; width:36px; height:18px; line-height:17px; text-align:center; color:#fff; background:#F60}
+
+.phcolor {
+    color: #999;
+}
+.pct-w100 {
+    width: 100%;
+}
+.h60 {
+    height: 60px;
+}
+.noborder {
+    border: 0;
+}
+.textareabox {
+    height: 98px;
+    resize: none;
+    outline: none;
+}
+.w80 {
+    width: 80px;
+}
+.ver-2 {
+    vertical-align: -2px;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.duixiang span.now {
+    background: #67ac02;
+    border: 1px solid #67ac02;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.duixiang span {
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    background: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    color: #666;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+.photo-list01 .num-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #b5b5b5;
+}
+
+.xinjian {
+    display: none;
+}
+
+.ml-5{
+    margin-left: -5px;
+}
+
+.tab-item a.cur {
+    background: #bdc4cb;
+    color: #fff;
+}
+
+.cardbottom:after{
+    content: '';
+    height: 18px;
+    width: 1px;
+    display: inline-block;
+}
+
+/*.w100{*/
+    /*width: 100%;*/
+/*}*/
+
+.photo-list01 .bianji {
+    padding: 2px 3px 3px 3px;
+    margin-top: 2px;
+    border: 1px #F90 solid;
+}
+.photo-list01 .input-wrap input {
+    width: 80%;
+    line-height: 15px;
+    height: 15px;
+    background-color: #FFF;
+    border: 0 none;
+    outline: 0 none;
+    vertical-align: top;
+    cursor: text;
+}

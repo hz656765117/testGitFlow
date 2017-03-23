@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hz.business.classSystem.base.dao.DmkYearTermMapper" >
+  <resultMap id="BaseResultMap" type="com.hz.business.classSystem.base.pojo.DmkYearTerm" >
+    <id column="year_term_key" property="yearTermKey" jdbcType="VARCHAR" />
+    <result column="year_term_name" property="yearTermName" jdbcType="VARCHAR" />
+    <result column="year_key" property="yearKey" jdbcType="VARCHAR" />
+    <result column="year_name" property="yearName" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    year_term_key, year_term_name, year_key, year_name
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.hz.business.classSystem.base.pojo.DmkYearTermExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    'true' as QUERYID,
+    <include refid="Base_Column_List" />
+    from jwxt_dmk_year_term
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from jwxt_dmk_year_term
+    where year_term_key = #{yearTermKey,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from jwxt_dmk_year_term
+    where year_term_key = #{yearTermKey,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.hz.business.classSystem.base.pojo.DmkYearTermExample" >
+    delete from jwxt_dmk_year_term
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.hz.business.classSystem.base.pojo.DmkYearTerm" >
+    insert into jwxt_dmk_year_term (year_term_key, year_term_name, year_key, 
+      year_name)
+    values (#{yearTermKey,jdbcType=VARCHAR}, #{yearTermName,jdbcType=VARCHAR}, #{yearKey,jdbcType=VARCHAR}, 
+      #{yearName,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.hz.business.classSystem.base.pojo.DmkYearTerm" >
+    insert into jwxt_dmk_year_term
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="yearTermKey != null" >
+        year_term_key,
+      </if>
+      <if test="yearTermName != null" >
+        year_term_name,
+      </if>
+      <if test="yearKey != null" >
+        year_key,
+      </if>
+      <if test="yearName != null" >
+        year_name,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="yearTermKey != null" >
+        #{yearTermKey,jdbcType=VARCHAR},
+      </if>
+      <if test="yearTermName != null" >
+        #{yearTermName,jdbcType=VARCHAR},
+      </if>
+      <if test="yearKey != null" >
+        #{yearKey,jdbcType=VARCHAR},
+      </if>
+      <if test="yearName != null" >
+        #{yearName,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.hz.business.classSystem.base.pojo.DmkYearTermExample" resultType="java.lang.Integer" >
+    select count(*) from jwxt_dmk_year_term
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update jwxt_dmk_year_term
+    <set >
+      <if test="record.yearTermKey != null" >
+        year_term_key = #{record.yearTermKey,jdbcType=VARCHAR},
+      </if>
+      <if test="record.yearTermName != null" >
+        year_term_name = #{record.yearTermName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.yearKey != null" >
+        year_key = #{record.yearKey,jdbcType=VARCHAR},
+      </if>
+      <if test="record.yearName != null" >
+        year_name = #{record.yearName,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update jwxt_dmk_year_term
+    set year_term_key = #{record.yearTermKey,jdbcType=VARCHAR},
+      year_term_name = #{record.yearTermName,jdbcType=VARCHAR},
+      year_key = #{record.yearKey,jdbcType=VARCHAR},
+      year_name = #{record.yearName,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.hz.business.classSystem.base.pojo.DmkYearTerm" >
+    update jwxt_dmk_year_term
+    <set >
+      <if test="yearTermName != null" >
+        year_term_name = #{yearTermName,jdbcType=VARCHAR},
+      </if>
+      <if test="yearKey != null" >
+        year_key = #{yearKey,jdbcType=VARCHAR},
+      </if>
+      <if test="yearName != null" >
+        year_name = #{yearName,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where year_term_key = #{yearTermKey,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.hz.business.classSystem.base.pojo.DmkYearTerm" >
+    update jwxt_dmk_year_term
+    set year_term_name = #{yearTermName,jdbcType=VARCHAR},
+      year_key = #{yearKey,jdbcType=VARCHAR},
+      year_name = #{yearName,jdbcType=VARCHAR}
+    where year_term_key = #{yearTermKey,jdbcType=VARCHAR}
+  </update>
+</mapper>

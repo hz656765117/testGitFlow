@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hz.business.classSystem.base.dao.DmkPrizeCodeMapper" >
+  <resultMap id="BaseResultMap" type="com.hz.business.classSystem.base.pojo.DmkPrizeCode" >
+    <id column="prize_key" property="prizeKey" jdbcType="VARCHAR" />
+    <result column="prize_name" property="prizeName" jdbcType="VARCHAR" />
+    <result column="type" property="type" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    prize_key, prize_name, type
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.hz.business.classSystem.base.pojo.DmkPrizeCodeExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    'true' as QUERYID,
+    <include refid="Base_Column_List" />
+    from jwxt_dmk_prize_code
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from jwxt_dmk_prize_code
+    where prize_key = #{prizeKey,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from jwxt_dmk_prize_code
+    where prize_key = #{prizeKey,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.hz.business.classSystem.base.pojo.DmkPrizeCodeExample" >
+    delete from jwxt_dmk_prize_code
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.hz.business.classSystem.base.pojo.DmkPrizeCode" >
+    insert into jwxt_dmk_prize_code (prize_key, prize_name, type
+      )
+    values (#{prizeKey,jdbcType=VARCHAR}, #{prizeName,jdbcType=VARCHAR}, #{type,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.hz.business.classSystem.base.pojo.DmkPrizeCode" >
+    insert into jwxt_dmk_prize_code
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="prizeKey != null" >
+        prize_key,
+      </if>
+      <if test="prizeName != null" >
+        prize_name,
+      </if>
+      <if test="type != null" >
+        type,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="prizeKey != null" >
+        #{prizeKey,jdbcType=VARCHAR},
+      </if>
+      <if test="prizeName != null" >
+        #{prizeName,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null" >
+        #{type,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.hz.business.classSystem.base.pojo.DmkPrizeCodeExample" resultType="java.lang.Integer" >
+    select count(*) from jwxt_dmk_prize_code
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update jwxt_dmk_prize_code
+    <set >
+      <if test="record.prizeKey != null" >
+        prize_key = #{record.prizeKey,jdbcType=VARCHAR},
+      </if>
+      <if test="record.prizeName != null" >
+        prize_name = #{record.prizeName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.type != null" >
+        type = #{record.type,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update jwxt_dmk_prize_code
+    set prize_key = #{record.prizeKey,jdbcType=VARCHAR},
+      prize_name = #{record.prizeName,jdbcType=VARCHAR},
+      type = #{record.type,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.hz.business.classSystem.base.pojo.DmkPrizeCode" >
+    update jwxt_dmk_prize_code
+    <set >
+      <if test="prizeName != null" >
+        prize_name = #{prizeName,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null" >
+        type = #{type,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where prize_key = #{prizeKey,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.hz.business.classSystem.base.pojo.DmkPrizeCode" >
+    update jwxt_dmk_prize_code
+    set prize_name = #{prizeName,jdbcType=VARCHAR},
+      type = #{type,jdbcType=VARCHAR}
+    where prize_key = #{prizeKey,jdbcType=VARCHAR}
+  </update>
+</mapper>

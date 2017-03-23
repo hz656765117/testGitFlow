@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+.w118{ width:118px}
+.w83{ width:83px}
+.w268{ width:268px}
+.w382{ width:382px}
+.w550{ width:550px}
+.w630{ width:630px}
+.w640{ width:640px}
+.w647{ width:647px}
+.w580{ width:580px}
+.w717{ width:717px}
+.w725{ width:725px}
+
+.h240{ height:240px}
+.max-h546{ max-height:546px; overflow: hidden; overflow-y:auto;}
+.max-h660{ max-height:660px}
+
+.cur-pointer{ cursor:pointer}
+
+.bd-hui04{border:5px #eaeaea solid}
+
+.lh25{line-height:25px}
+
+.mt-1{ margin-top:-1px}
+.mt-11{ margin-top:-11px}
+.mt11{ margin-top:11px}
+.mt15{ margin-top:15px}
+.ml-11{ margin-left:-11px}
+.ml70{ margin-left:70px}
+.ml80{ margin-left:80px}
+.ml90{ margin-left:90px}
+.mb5{ margin-bottom:5px}
+.mb15{ margin-bottom:15px}
+.mb25{ margin-bottom:25px}
+.mr85{ margin-right:85px}
+
+.pd20{ padding:20px;}
+.pt5{ padding-top:5px}
+.pl15{ padding-left:15px}
+.pl30{ padding-left:30px}
+.pl35{ padding-left:35px}
+.pr10{ padding-right:10px}
+.pr15{ padding-right:15px}
+.pr38{ padding-right:38px}
+.pb5{ padding-bottom:5px}
+.pb13{ padding-bottom:13px}
+
+
+/* 置顶按钮图标 */
+.ico-pin-link {background-position:0 -872px;_background-position:0 -870px;padding-left:18px;cursor:pointer}
+.ico-review-link { background-position: 0 -889px; _background-position:0 -887px;padding-left:18px;cursor:pointer}
+.btn-hui:hover .ico-review-link { background-position: 0 -909px; _background-position:0 -907px;}
+
+/* 微社区 雪碧图 */
+.wsq-icon-bg{ background: url(../images/weishequ-sprite.png) no-repeat}
+.ico-pinned-title { display: inline-block; width: 10px; height: 11px; margin: auto 8px auto -19px; background-position: 0 -60px;}
+.ico-normal-title { display: inline-block; width: 14px; height: 14px; margin: auto 8px -2px -19px; background-position: 0 -20px;}
+.ico-review-delete { display: inline-block; width: 20px; height: 30px; background-position: 4px -111px; margin-top:4px }
+
+
+/* 微社区 话题选项卡 */
+.tabs {margin-top: 20px;}
+.tabs .navbar {font-size: 0; border-bottom: 1px #eaeaea solid; margin-bottom:14px;}
+.tabs .navbar a {background: #f5f5f5;display: inline-block; font-size: 14px; color: #999999; line-height: 28px;  height: 28px; width: 98px; border: 1px #eaeaea solid; text-align: center; border-bottom: 1px #eaeaea solid; margin-bottom: -1px;}
+.tabs .navbar a.pinned { margin-left: -1px; }
+.tabs .navbar a i {background: url(../images/weishequ-sprite.png) no-repeat; display: inline-block; width: 11px; height: 10px; margin-right: 6px;}
+.tabs .navbar a.all i {background-position: 0 -40px;}
+.tabs .navbar a.pinned i {background-position: 0 -80px;}
+.tabs .navbar a.cur { background-color: #ffffff; border-bottom: 1px #ffffff solid; color: #333333;}
+.tabs .item .right { position: relative;}
+.tabs .item .right i.t, .tabs .item .right i.t i {display: inline-block; font-family: 'SimSun'; line-height: 26px; font-size: 14px; height: 22px; overflow: hidden; position: absolute; font-style: normal; z-index: 5; width: 15px;}
+.tabs .item .right i.t {left: -8px; top: 10px; color: #e5e5e4; z-index: 5;}
+.tabs .item .right i.t i {left: 1px; top: 0; color: #fff;}
+
+
+ul.review-list li .debris {border-bottom:1px #eaeaea dashed;overflow:hidden}
+ul.review-list li:last-of-type .debris {border-bottom:none}
+ul.review-list li:last-of-type > div {border-bottom: none;}
+
+/* 置顶下拉选择 */
+.pin-selection { position: relative; z-index:100}
+.pin-selection ul {display: none; border: 1px solid #eaeaea; margin-top: -1px; width: 78px; position: absolute; left: -1px; top: 30px;}
+.pin-selection:hover ul {display: block; }
+.pin-selection ul li { background: #ffffff; line-height: 30px; height: 30px; font-size:12px}
+.pin-selection ul li:hover { background: #eaeaea;}
+
+/* 窗口关闭按钮 */
+.win-close {display:block; float: right; width:20px; height:20px; text-align: center; background: #dddddd; color: #FFFFFF; line-height: 1.1em; font-size: 15px; vertical-align: middle; cursor: pointer;}
+.win-close:hover{background: #67ad03; -webkit-transition:.3s; transition:.3s; }
+/* 提示颜色设置*/
+.phcolor{ color:#999;}

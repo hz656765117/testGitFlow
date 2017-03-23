@@ -1,0 +1,36 @@
+/* .bg01{ background:url(../images/bg.jpg) no-repeat; background-size:cover;} */
+.content{ width:900px; margin:0 auto;position: absolute; left:50%;margin-left:-450px;top:50%;height:730px; margin-top:-365px;}
+.tit{line-height:99px; height:99px;}
+.wxdiv {margin-top:11px;height:540px;overflow:hidden;}
+.wxdiv ul li{margin-top:10px;height:140px;padding-top:15px;padding-bottom:15px;background:#fff;border-radius:4px;-moz-border-radius:4px;-ms-border-radius:4px;}
+
+.content-color{margin-top:15px;}
+.content-style01{font-size:45px;}
+.content-style02{font-size:30px;}
+.content-style03{font-size:28px;}
+.content-style04{font-size:20px;}
+
+/*��ㄥ����峰��*/
+html{background:url(../images/bg.jpg) no-repeat; background-size:cover;}
+/* html:-moz-full-screen {background:url(../images/bg.jpg) no-repeat; background-size:cover;}
+html:-ms-fullscreen {background:url(../images/bg.jpg) no-repeat;background-size:cover;}
+html:fullscreen {background:url(../images/bg.jpg) no-repeat;background-size:cover;} */
+
+.black-pop{background-color:#3e3e3e;position:absolute;left:0;top:0;width:100%;height:100%;z-index:998;}
+.black-tit{color:#fff;line-height:100px;text-align:center;font-size: 40px;}
+.tit-cor{color:#f6ff27;padding:0 4px;font-weight: bold}
+.black-close{cursor:pointer;position:absolute;right:0;top:0;}
+
+
+.content01 h2{color:#ff0000;}
+.content01 p{ color:#9a0000;}
+.content02 h2{color:#3c9132;}
+.content02 p{ color:#28648c;}
+.content03 h2{color:#77aa00;}
+.content03 p{ color:#669900;}
+.content04 h2{color:#2873d2;}
+.content04 p{ color:#054b8c;}
+.content05 h2{color:#f00078;}
+.content05 p{ color:#b90028;}
+.content06 h2{color:#f069b4;}
+.content06 p{ color:#f00078;}

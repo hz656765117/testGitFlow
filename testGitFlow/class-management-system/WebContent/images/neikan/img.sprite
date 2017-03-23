@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SpriteFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" CssFileName="../images" ImageName="img" IsPhone="false" SpriteImgFileType="Png" xmlns="CssSprite">
+  <SpriteList>
+    <Sprite Path="arrownong1.png" LocationX="0" LocationY="0" />
+    <Sprite Path="arrownong2.png" LocationX="0" LocationY="16" />
+    <Sprite Path="arrowdan1.png" LocationX="0" LocationY="32" />
+    <Sprite Path="arrowdan2.png" LocationX="0" LocationY="48" />
+  </SpriteList>
+</SpriteFile>

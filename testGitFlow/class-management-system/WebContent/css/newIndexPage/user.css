@@ -1,0 +1,23 @@
+@charset "utf-8";
+/*登录*/
+.user-bg{background:url(../images/register.jpg) center 0 no-repeat; padding: 80px 0 115px}
+/*login*/
+.login-cont{ width:480px; background: #fff;height:522px;border: 1px #ccc solid;border-radius:6px;-webkit-border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:5px;}
+.login-cont h2{ font-size: 36px; color: #333; font-weight: normal; text-align: center; padding: 55px 0 0}
+.login-form{ width: 360px; margin: 0 auto}
+.ui-p{ padding: 36px 0 0; position: relative}
+/*表单*/
+.input-label{width: 100%; color:#666;  font-size:16px; position:absolute;pointer-events: none;left:0;top:12px; overflow: hidden;}
+.ui-input{height: 48px; position:relative; font-size:16px;line-height: 48px; background:#f0f0f0; border:1px #f0f0f0 solid;padding:0 0 0 6%;width: 94%;display: inline-block;transition:background-color 0.25s, border-color 0.25s;-webkit-transition:background-color 0.25s, border-color 0.25s;}
+.input--error .ui-input{
+    border: 1px #ff5050 solid;
+    background: #fff;
+}
+.input--error .input-label {
+    color: #ff5050;
+}
+
+/*操作按钮*/
+.step-btn{color: #fff;line-height: 46px;font-size: 20px; text-align:center; border:1px #67ad03 solid;background: #67ad03;transition:background-color 0.25s, border-color 0.25s;}
+.step-btn:hover,.step-btn:active{color: #67ad03; border:1px #67ad03 solid;background: #fff;}
+.step-btn-error,.step-btn-error:hover{ background:#fe504f; border:1px #fe504f solid; color:#fff}

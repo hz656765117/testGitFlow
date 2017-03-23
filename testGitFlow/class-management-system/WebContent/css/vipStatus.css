@@ -1,0 +1,89 @@
+.vipAlerts{
+    border-radius: 0
+}
+
+.vip-alert-simple .formbtn {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.vip-alert-simple {
+    width: 360px;
+}
+
+
+.vip-simple-tankuang {
+    padding: 50px 40px 40px
+}
+
+.vip-simple-tankuang h4 {
+    font-size: 14px;
+    text-align: center;
+    color: #333;
+    font-weight: 700;
+    padding-bottom: 18px
+}
+
+.vip-huang{color:#ff9900;}
+
+.vip-blue{color:#0078b6}
+
+.vip-formbtn {
+    margin-top: 30px;
+     margin: 20px auto 0;
+    text-align: center;
+}
+.vip-formbtn .btn {
+    min-width: 120px;min-width: auto\9;
+    min-width: auto\9;
+    border-radius: 4px;
+}
+
+.vip-formbtn .single-btn {
+    display: block;
+    margin: 0 auto;
+    width: 240px
+}
+
+button{vertical-align:middle;font-size:100%;outline:none;font-family: 'Microsoft yahei',Arial;}
+
+
+.btn {
+    padding: 0px 15px; line-height: 28px; border:1px #ddd solid
+}
+
+/* .btn-success {
+    border-color: #639916;
+    background: #67ad03
+}
+
+.btn-success:hover {
+    background: #7ac128;
+    border-color: #69ab1f !important
+}
+
+.btn-success:active:focus,.btn-success:active:hover,.btn-success:focus,.btn-success.active.focus,.btn-success.active:focus,.btn-success.active:hover,.btn-success:active.focus,.btn-success:active:focus,.btn-success:active:hover,.open>.dropdown-toggle.btn-success.focus,.open>.dropdown-toggle.btn-success:focus,.open>.dropdown-toggle.btn-success:hover{
+    border-color: #639916 !important;
+    background: #67ad03;
+    outline: 0
+}
+.btn-success.disabled, .btn-success.disabled.active, .btn-success.disabled.focus, .btn-success.disabled:active, .btn-success.disabled:focus, .btn-success.disabled:hover, .btn-success[disabled], .btn-success[disabled].active, .btn-success[disabled].focus, .btn-success[disabled]:active, .btn-success[disabled]:focus, .btn-success[disabled]:hover, fieldset[disabled] .btn-success, fieldset[disabled] .btn-success.active, fieldset[disabled] .btn-success.focus, fieldset[disabled] .btn-success:active, fieldset[disabled] .btn-success:focus, fieldset[disabled] .btn-success:hover{
+    background-color: #639916 !important;
+   border-color: #67ad03;
+} */
+
+.btn-lg {
+     line-height: 38px; padding: 0 38px;  border-radius:4px;
+    font-size: 16px;
+
+}
+
+#vipLayerClose {
+    border-color: #639916;
+    background: #67ad03
+}
+
+#vipLayerClose:hover {
+    background: #7ac128;
+    border-color: #69ab1f !important
+}

@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document */
+.z100{ z-index:100;}
+/*消息自动回复*/
+.zidonghuifi-pd{ padding:30px 51px;}
+.shuru-pd{padding:2px 5px;}
+.huifu-btn{width:80px; height:30px; line-height:30px;background:url(../images/btn-bg.gif);}
+.btn-pos{position:absolute;right:20px;top:40px;}
+.ico-cir{ width:10px; height:10px;background-position: 0 -691px;position:relative;*top:-4px;_top:6px;}
+.ico-editer{ background-position:0 -326px;padding-left: 18px;_background-position:0 -324px;}
+.btn-edit:hover .ico-editer{background-position:0px -789px; color:#fff;}
+.ico-delete{ width:11px; height:12px; background-position:0 -355px;}
+.btn-tijiao{ position:absolute;right:51px;top:47px;}
+.huifu-pop{ position: absolute;left: 50%; margin-left: -225px;top: 377px;width: 450px; border: 5px solid #eaeaea;z-index: 1000;
+	background: #fff;display: none;}
+.huifu-poppd{padding: 22px 30px;}
+.btn-editer:hover{ color:red;}
+/*消息自动应答*/
+.ico-wenzi{ background-position:0 -708px;_background-position:0 -701px;}
+.textarea-yingda{ border:0; border-bottom:1px solid #eaeaea;width:676px;height:132px;}
+.btn-clear{background:url(../images/btn-bg.gif) repeat-x;}
+/*帐户信息*/
+.user-edit-pic{ width:80px; height:80px; float:left; position:relative; padding-right:18px;}
+.user-pic{ width:80px; height:80px;}
+.user-pic img{ width:80px; height:80px;}
+.user-edit-pic a{ height:20px; line-height:19px; width:80px; position:absolute;bottom:0;left:0;background:rgba(0,0,0,0.5);filter: progid:DXImageTransform.Microsoft.gradient( GradientType = 0,startColorstr = '#50000000',endColorstr = '#50000000')\9; color:#fff}
+.user-yaoqingma{ float:left;width:460px}
+.user-yaoqingma-cont{ border:1px #e5e5e4 dashed; margin-top:24px; text-align:center; height:68px; padding-top:12px}
+/*上传头像*/
+.upload-pic{ width:100px; height:100px}
+/*菜单管理*/
+.menugl-l{ width:210px; height:440px;}
+.menugl-r{ width:432px;}
+
+/*2014.11.20新增 绑定指南*/
+.bangding-logo{height:40px; margin:19px 19px 40px 19px;}
+.bangding-logo-son{height:40px;color:#fff;background:#c6c6c6;font-size:14px;width:135px;}
+.bg-logo-lv{background:#67ad03;}
+.w114{ width:114px;}
+.w155{ width:155px;}
+.ml21{ margin-left:21px;}
+.ml43{margin-left:43px;}
+.bangding-arr{width:21px;height:40px; position:absolute;left:0;top:0;}
+.bangding-arrhui{background:url(../images/arrowhui.png) no-repeat center center;}
+.bangding-arrlv{background:url(../images/arrow2.png) no-repeat center center;}
+.bangding-tit{ margin:19px; height:30px; line-height:30px; background:#6fba2c; color:#fff; font-size:14px; padding-left:9px;}
+
+
+/*2014.11.24 绑定新增指南*/
+
+.w140{ width:140px;}
+.h36{ height:36px;}
+.mt18{ margin-top:18px;}
+.ml19{ margin-left:19px;}
+.mr19{ margin-right:19px;}
+.mb13{ margin-bottom:13px;}
+.yingyongid{ padding-left:20px; width:160px; background:#f5f5f5; border-right:1px solid #ccc; font-size:14px;color:#333; font-weight:bold;}
+.step-click{ margin-top:18px; border-top:1px dashed #ccc; padding-top:19px; padding-bottom:19px;}
+.step-pre{ width:80px;height:30px;line-height:30px;text-align:center;float:left;font-size:14px;color:#666;margin-left:19px; background:url(../images/step-back.jpg) no-repeat;}
+.step-next{ width:78px; height:28px;line-height:28px;text-align:center;background:#ff9900; float:right; font-size:14px;color:#fff; border:1px solid #e68b02; margin-right:19px;}
+.id-inut{ width:160px; height:36px; line-height:36px; margin-top:5px;}
+.id-inut input{border:0; height:36px; line-height:36px;margin-left:10px; width:150px; font-size:14px; color:#999;}
+.bl-hui{ border-left:1px solid #ccc;}
+.box-align-center{-webkit-box-align:center;-moz-box-align:center;box-align:center;}
+.copy{ width:80px;height:30px;line-height:30px;text-align:center;background:url(../images/step-back.jpg) no-repeat; color:#333; font-size:14px;}
+.copy-pos{position:relative;top:9px; left:20px; }
+.huidiao-table th{padding-left:20px;background:#f5f5f5; border-right:1px solid #ccc; border-bottom:1px solid #ccc;font-size:14px;color:#333; font-weight:bold;}
+.huidiao-table td{border-right:1px solid #ccc; border-bottom:1px solid #ccc;line-height:24px;font-size:14px; padding:12px 20px;}
+.huidiao-table{border-left:1px solid #ccc; border-top:1px solid #ccc;}
+.huidiao-table td a{}
+

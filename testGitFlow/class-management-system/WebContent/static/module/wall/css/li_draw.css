@@ -1,0 +1,384 @@
+.body-wrap {
+    z-index: -2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.weixin-wrap {
+    cursor: pointer;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.draw-wrap {
+    width: 870px;
+    margin: 0px auto;
+    padding-top: 10px;
+    text-align: center
+}
+
+.draw-left, .draw-center, .draw-right {
+    height: 440px;
+    display: inline-block;
+    background-color: #eef5f7;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.draw-left {
+    width: 200px;
+    float: left;
+}
+
+.draw-center {
+    width: 320px;
+    margin: 0px auto;
+}
+
+.draw-right {
+    width: 340px;
+    height: 440px;
+    float: right;
+    
+}
+
+.reward-title {
+    width: 170px;
+    font-size: 30px;
+    color: #28648c;
+    border-bottom: solid 1px #28648c;
+    display: inline-block;
+    line-height: 60px;
+    font-weight: normal;
+}
+
+.reward-select {
+    height: 40px;
+    width: 168px;
+    font-size: 25px;
+    color: #28648c;
+    border: 1px solid #28648c;
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #eef5f7
+}
+
+.reward-select option {
+    text-align: center;
+    background-color: #eef5f7
+}
+
+.reward-list li {
+    display: none;
+}
+
+.reward-list h3 {
+    color: #67a7d2;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.reward-name {
+    color: #28648c;
+    font-size: 30px;
+    font-weight: normal;
+    height: 35px;
+}
+
+.reward-info {
+    font-size: 20px;
+    color: #67a7d2;
+    height: 35px;
+    line-height: 35px;
+}
+
+.draw-head-wrap {
+    width: 140px;
+    height: 140px;
+    display: inline-block;
+}
+
+.reward-count {
+    color: #a3b937;
+}
+
+.reward-start {
+    background-color: #67a7d2;
+    color: #fff;
+    font-size: 30px;
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px 80px;
+    border-radius: 10px;
+    margin-top: 65px !important;
+}
+
+.reward-stop {
+    background-color: #67a7d2;
+    color: #fff;
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+    padding: 10px 80px;
+    border-radius: 10px;
+    margin-top: 65px !important;
+}
+
+.reward-com {
+    background-color: #8D99A0;
+    color: #fff;
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+    padding: 10px 80px;
+    border-radius: 10px;
+    margin-top: 65px !important;
+}
+
+.reward-restart {;
+    background-color: #fff;
+    color: #67a7d2;
+    font-size: 30px;
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px 45px;
+    border-radius: 10px;
+    border: solid 1px #67a7d2;
+    margin-top: 10px;
+}
+
+.reward-name-list {
+    width: 320px;
+    font-size: 30px;
+    color: #28648c;
+    border-bottom: solid 1px #28648c;
+    display: inline-block;
+    line-height: 60px;
+    font-weight: normal;
+}
+
+.reward-name-list-count {
+    color: #67a7d2;
+}
+
+.rewarder-list {
+    display: inline-block;
+    height: 300px;
+    width: 340px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.rewarder-list li {
+    width: 310px;
+    height: 90px;
+    margin-left: 10px;
+    background-color: #fff;
+    margin-top: 5px
+}
+
+.rewarder-list img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.rewarder-lis-name {
+    font-size: 24px;
+    color: #28648c;
+}
+
+.rewarder-list-info {
+    font-size: 14px;
+    color: #67a7d2;
+    word-break: break-all;
+}
+
+.piaochecked {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    float: right;
+    margin-right: 5px;
+    float: right;
+    text-align: center;
+    background-image: url(../images/checkbox_01.gif);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    position: absolute;
+    right: 0px;
+    top: 15px;
+}
+
+.on_checked {
+    background-position: 0 -21px;
+}
+
+.radioclass {
+    opacity: 0;
+    cursor: pointer;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+}
+
+.running .reward-start {
+    display: none;
+}
+
+.running .reward-stop {
+    display: inline-block;
+}
+
+.vote-wrap {
+    display: inline-block;
+    width: 100%;
+    height: 600px;
+    margin: 0px auto;
+    background-color: #fff;
+    padding: 15px;
+}
+
+.favorate-p {
+    float: left;
+    color: #669900 !important;
+    font-size: 30px;
+}
+
+.favorate-span {
+    color: #95bc46;
+}
+
+.vote-select {
+    height: 40px;
+    width: 250px;
+    font-size: 25px;
+    color: #669900;
+    border: 1px solid #669900;
+    display: inline-block;
+    background-color: #f2f7e6;
+}
+
+.vote-select option {
+    text-align: center;
+}
+
+.begin-vote {
+    display: inline-block;
+    color: #fff;
+    background-color: #95bc46;
+    font-size: 30px;
+    padding: 10px 35px;
+    margin-top: 20px;
+}
+
+/*.chart-color{*/
+/*color: #95bc46 !important;*/
+/*}*/
+
+.vote-panel {
+    margin-top: 10px;
+    height: 410px;
+    width: 860px;
+    max-width:860px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.vote-tip {
+    font-size: 22px;
+    color: #95bc46 !important;
+}
+
+.vote-tip span {
+    color: #ffab27;
+}
+
+.chart-name-list {
+    width: 950px;
+    white-space: nowrap;
+
+}
+
+.chart-name-list span {
+    white-space: nowrap;
+    display: inline-block;
+    width: 95px;
+    color: #95bc46;
+    line-height: 30px;
+    text-align: center;
+    height: 30px;
+}
+
+.chart-data-list {
+    border-bottom: solid 1px #95bc46;
+    height: 360px;
+}
+
+.chart-series-item {
+    float: left;
+    width: 95px;
+    height: 350px;
+}
+
+.chart-series-item-series {
+    width: 85px;
+    height: 80px;
+    position: absolute;
+    background-color: #ff0000;
+    left: 5px;
+    bottom: 0px;
+    behavior: url(iecss3.htc);
+    -webkit-border-bottom-right-radius: 38px;
+    -webkit-border-bottom-left-radius: 38px;
+    border-bottom-left-radius:38px;
+    border-bottom-right-radius:38px;
+    -moz-border-bottom-left-radius:38px;
+    -moz-border-bottom-right-radius:38px;
+}
+
+.chart-series-item-series-vote {
+    background-color: #805427;
+    height: 40px;
+    position: absolute;
+    left: 0px;
+    width: 85px;
+    left: 5px;
+    text-align: center;
+    bottom: 60px;
+    border-radius: 120%;
+}
+
+.cover-qianlv {
+    background-color: #63d9b0;
+}
+
+.qianlv {
+    background-color: #41c396;
+}
+
+.cover-taohong {
+    background-color: #f68598;
+}
+
+.taohong {
+    background-color: #e65d74;
+}
+
+.cover-qianhuang {
+    background-color: #ffb94c;
+}
+
+.qianhuang {
+    background-color: #ffab27;
+}
+
+.yuan {
+    -moz-border-radius: 120%;
+    -webkit-border-radius: 120%;
+    border-radius: 120%;
+    z-index: 2;
+    behavior: url(iecss3.htc)
+}

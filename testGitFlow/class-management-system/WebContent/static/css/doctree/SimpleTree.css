@@ -1,0 +1,82 @@
+@charset "utf-8";
+/*
+Author：张浩华
+Date：2011.11.25 0:12
+Version：SimpleTree 1.0
+*/
+.doctree {
+    position: relative;
+}
+
+.layui-layer-page .layui-layer-content {
+    overflow: visible !important;
+}
+
+.st_tree {
+    display: none;
+    position: absolute;
+    width: 242px;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    left: 106px;
+    top: -15px;
+    padding: 0 0 5px 0;
+    white-space:nowrap;
+
+}
+
+/* 超链接 */
+.st_tree a {
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+/* 鼠标经过的超链接 */
+.st_tree a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+/* 菜单 */
+.st_tree ul {
+    padding-left:18px;
+    margin: 0;
+}
+
+/* 菜单项 */
+.st_tree ul li {
+    font-size: 14px;
+    color: #222;
+    line-height: 14px;
+    cursor: pointer;
+    list-style: none;
+    margin: 10px 0;
+}
+.st_tree ul li a{
+    margin-left: 3px;
+}
+/* 子菜单 */
+.st_tree ul li ul {
+}
+
+/* 子菜单项 */
+.st_tree ul li ul li {
+}
+
+/* 子菜单的父节点 */
+.st_tree .folder {
+    background: url("../../images/doctree/st_folder.png") no-repeat;
+    padding: 0 0 0 20px;
+}
+.st_tree .folder.fatherfolder{
+    list-style-image: url("../../images/doctree/st_icon.png");
+}
+
+/* 展开的父节点 */
+.st_tree .open {
+    background: url("../../images/doctree/st_folder_open.png")no-repeat;
+    padding: 0 0 0 20px;
+}
+.st_tree .folder.open{
+    list-style-image: url("../../images/doctree/st_icon_open.png");
+}

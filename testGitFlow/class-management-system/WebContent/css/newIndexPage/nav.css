@@ -1,0 +1,35 @@
+.ffa{ font-family: Arial;}
+.nav-float{width: 48px;position: fixed; right: 40px;top: 331px;z-index: 1000; }
+.nav-float li{ width: 48px; margin-top: 4px;}
+.nav-float li:first-child{ margin-top: 0;}
+.nav-float li .nav-content{background-color:#999;}
+.nav-float li .nav-icon:hover{background-color: #67ad03;}
+.nav-icon{background: url("../images/i-float.png") no-repeat;}
+.nav-iconcontent{ height: 48px;}
+.li02:hover .call-pop,.li04:hover .erwei-pop,.li05:hover .back-top{ display: block;}
+
+
+.nav-icon01{background-position:10px 10px;padding:49px 0 7px 0;}
+.nav-icon02{background-position:10px -79px;}
+.nav-icon03{ background-position:10px -144px;}
+.nav-icon04{ background-position:10px -207px;}
+.nav-icon05{ background-position:10px -263px; cursor:pointer}
+.call-pop{position:absolute;width:164px;background-color: #fff;right:66px;top:-15px;border: 1px solid #ccc; padding-bottom: 17px;}
+.arrow{ position: absolute;}
+.arrow:after{content:" ";width: 10px;height: 12px;background: url("../images/arrow.png") no-repeat;top:50%; margin-top:-6px;right:-10px; position: absolute;}
+.hei04{color:#333;}
+.hei05{color: #000;}
+.lv04{ color: #67ad03;}
+.mt5{ margin-top: 5px;}
+
+.free-pop{ position: absolute; width: 260px; background-color:#fff;right:66px;top: -82px;border: 1px solid #ccc; padding-bottom: 20px;}
+
+.free-pop img{ position: absolute; top: 10px;right: 10px; cursor:pointer}
+.nav-input{ width: 218px; height: 34px;border: 1px solid #ddd; margin-top: 18px; background: url("../images/i-input.png") no-repeat;background-position:9px 5px;}
+.nav-input02{ background: url("../images/i-input.png") no-repeat; background-position: 11px -40px; margin-top: 10px;}
+.nav-input input{ margin-left: 33px; border: 0; height: 34px; line-height: 34px; font-size: 12px;}
+.free-pop a{ display: block; width: 220px; height: 36px; background-color: #67ad03; line-height: 36px; margin:20px 0 0 20px; font-size: 14px; color: #fff; text-align: center;}
+
+.erwei-pop{position:absolute;background-color:#fff;right:66px;top:-73px;border: 1px solid #ccc; padding: 20px;}
+.back-top{position: absolute; width: 96px; height: 52px; line-height: 52px; background-color: #fff;border: 1px solid #ccc;right:66px;top: -2px; font-size: 14px; text-align: center;}
+

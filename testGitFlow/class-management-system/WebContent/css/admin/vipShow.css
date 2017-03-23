@@ -1,0 +1,7 @@
+.userbox-l{ padding:68px 0 0 0;height:180px; width:70%; float:left;}
+.userphoto{ width:100px; margin-left:37px;height:100px;border-radius:100px;-moz-border-radius:100px;-webkit-border-radius:100px; float:left}
+.userinfo{margin-left:167px; position:relative;}
+.userinfo h2{ color:#67ad03; font-size:18px; padding:10px 0 22px 0}
+.userbox-l .p1{ font-size:14px; color:#666; padding: 0 15px 4px 0;line-height:26px;}
+.userbox-l .link{ padding-top:16px; padding-bottom:25px;position:absolute;top:0;left:290px;}
+.box-mar{margin:14px 0 0 167px;}

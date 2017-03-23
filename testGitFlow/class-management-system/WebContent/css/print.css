@@ -1,0 +1,37 @@
+@charset "UTF-8";
+   .approve{width: 820px;margin: 0 auto;font-size: 16px;}
+    .approve-process{width: 820px; height: 42px; font-size: 16px;}
+    .approve-process .one{width: 280px; height: 42px; float: left; position: relative;}
+    .approve-process .one p{margin: 0px; width: 260px; line-height: 42px; text-align: center; color: #FFFFFF;position: absolute;}
+    .approve-process .one img{position: absolute;left: 0;top: 0;}
+    
+    .approve-process .green{width: 288px; height: 42px; float: left; position: relative; margin-left: -18px;}
+    .approve-process .green p{margin: 0px; width: 288px; line-height: 42px; text-align: center; color: #FFFFFF;position: absolute;}
+    .approve-process .green img{position: absolute;left: 0;top: 0;}
+    
+    .approve-process .red{width: 288px; height: 42px; float: left; position: relative;margin-left: -20px;}
+    .approve-process .red p{margin: 0px; width: 288px; line-height: 42px; text-align: center; color: #FFFFFF;position: absolute;}
+    .approve-process .red img{position: absolute;left: 0;top: 0;}
+    
+    .approve-process .white{width: 290px; height: 42px; float: left; position: relative;margin-left: -20px;}
+    .approve-process .white p{margin: 0px; width: 290px; line-height: 42px;color: #FFFFFF; text-align: center;position: absolute;}
+    .approve-process .white img{position: absolute;left: 0;top: 0;}
+
+    
+    .title{padding: 0 15px; margin: 30px 0 20px 0; line-height: 42px; background: #eff1f5; border: 1px solid #e5e5e5;}
+    
+    .people{width: 820px;}
+    .people .people-name{width: 233px; float: left;padding: 20px 0 0 30px;}
+    .people .people-name span{width: 140px; height: 140px; margin-bottom: 15px; border-radius: 50% !important; overflow: hidden; display: inline-block;}
+    .people .people-name span img{width: 100%;}
+    .people .people-name p{padding: 0 0 0 30px; margin: 0;line-height: 25px;}
+    .people .people-info{width: 587px;display: inline-block; list-style: none; padding: 19px 0; margin: 0; background: #eff1f5; border: 1px solid #e5e5e5; border-radius: 5px;}
+    .people .people-info li{padding: 0;line-height: 2.5;}
+    .people .people-info li span{width: 125px; text-align: right;  display: inline-block;}
+    
+    .approve-info{margin: 20px 0; border-top: 1px solid #e5e5e5;border-left: 1px solid #e5e5e5; border-right: 1px solid #e5e5e5; line-height: 1.9;}
+    .approve-info dt{padding: 10px 15px; background: #eff1f5;border-bottom: 1px solid #e5e5e5;}
+    .approve-info dt span{display: inline-block;}
+    .approve-info dt span:nth-child(1){width: 200px;}
+    .approve-info dt span:nth-child(2){width: 100px;}
+    .approve-info dd{padding: 5px 15px; margin: 0;border-bottom: 1px solid #e5e5e5;}

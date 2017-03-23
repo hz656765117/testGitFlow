@@ -1,0 +1,37 @@
+@font-face {font-family: 'iconfont';
+    src: url('iconfont.eot'); /* IE9*/
+    src: url('iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('${webPath}iconfont/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('${webPath}iconfont/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+body {
+    background: #fff !important;
+    font-size: 16px;
+    line-height: 2em;
+}
+section {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+}
+.m {
+    margin: 10px 0;
+}
+.p {
+    padding: 10px 0;
+}
+.canjia p{
+    margin-right: 30px;
+    display:inline-block;
+}
+.tongji-table{
+    width:100%;
+    height:500px;
+    overflow-y: auto;
+}
+.tongji-table .table td,
+.tongji-table .table th{
+    text-align:center;
+    vertical-align:middle;
+    font-size: 14px;
+}

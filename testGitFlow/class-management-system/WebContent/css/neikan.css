@@ -1,0 +1,152 @@
+.bb-hui02{border-bottom:1px #eaeaea solid}
+.px-list{ margin-top:-1px}
+.px-list li{margin-top:-1px; padding:18px 20px; position:relative}
+
+.list-li{ border:1px #eaeaea solid;}
+.list-li :last-child {border-bottom:0}
+.list-li:hover{border:1px #67ad03 solid; z-index:1}
+
+.px-list01 li{ border:1px #eaeaea solid; margin-top:-1px;padding: 18px 20px;position: relative;}
+.px-list01 li:hover{border:1px #67ad03 solid; z-index:2;}
+.br3{border-radius: 3px}
+.w180{width: 180px}
+.blue{color:blue}
+
+/*����*/
+.w350{width: 350px}
+.fenlei{
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    background: #ccc;
+    color:#000;
+    float: left;
+    position: relative;
+    text-align: center;
+    margin-right: 10px;
+}
+.shanchu {
+    display: block;
+    width: 15px;
+    heihgt: 15px!important;
+    border-radius: 50%;
+    background: #000;
+    color: #fff;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 5px;
+    line-height: 15px;
+}
+.bb-hui03{border-bottom: 1px dashed #ccc}
+.newfenlei{
+    height: 30px;
+    line-height: 30px;
+}
+.newfenlei input{
+    height: 20px;
+    line-height: 20px;
+    width: 80px;
+    margin-left: 10px;
+}
+.close{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+/*�½��ڿ�*/
+.w203{width: 203px}
+.w615{width: 615px}
+
+.banshi{
+    width: 88px;
+    height:53px;
+}
+.banshi1{
+    background: url("../images/neikan/banshi1.png");
+    float: left;
+}
+.banshi2{
+    background: url("../images/neikan/banshi2.png");
+    float: right;
+}
+
+.muban1{
+    padding: 20px 9px 0 0px;
+    height: 90px;
+    margin-bottom:14px;
+    position: relative;
+}
+.shangarrow{
+    display: block;
+    width: 12px;
+    height: 16px;
+    background: url("../images/neikan/arrows.png") 0 -32px;
+    position: absolute;
+    top: 30px;
+    left: 9px;
+    cursor: pointer;
+}
+.shangarrow:hover{
+    background-position: 0 0;
+}
+.xiaarrow{
+    display: block;
+    width: 12px;
+    height: 16px;
+    background: url("../images/neikan/arrows.png") 0 -48px;
+    position: absolute;
+    bottom: 30px;
+    left: 9px;
+    cursor: pointer;
+}
+.xiaarrow:hover{
+    background-position: 0 -16px;
+}
+.temp1{
+    width: 150px;
+    height: 90px;
+    background: url("../images/neikan/bsbig1.png");
+    margin-left: 15px;
+    position: relative;
+}
+.temp2{
+    width: 150px;
+    height: 90px;
+    background: url("../images/neikan/bsbig2.png");
+    margin-left: 15px;
+    position: relative;
+}
+.temp1:hover,.temp2:hover{
+    border: 1px solid #ff9900;
+}
+.guanbibtn{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("../images/neikan/guanbibtn.png");
+    text-align: center;
+    position: absolute;
+    top: -9px;
+    right:-9px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.pt25{padding-top: 25px}
+.bglv00{background: #67ad03}
+.xuanzhong {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("../images/neikan/correct.jpg");
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.muban{
+    height: 526px;
+    overflow: auto;
+}
+.pb30{padding-bottom: 30px}

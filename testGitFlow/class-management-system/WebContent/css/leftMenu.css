@@ -1,0 +1,301 @@
+/**
+ * xiaozhi93
+ * 2017.02.07
+ * @type {[type]}
+ */
+.page-left {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    bottom: 0;
+    width: 198px;
+}
+.page-left h3{
+	font-family:"微软雅黑", Arial;
+	line-height: inherit;
+	font-weight:bold;
+	font-size: inherit;
+}
+.page-left a:hover{
+    text-decoration:none !important;
+}
+.navbox {
+    position: relative;
+    width: 198px;
+    background: #39424c;
+}
+.navbox .toplink {
+    line-height: 50px;
+    padding-left: 25px;
+    color: #fff;
+    background: #67ad03;
+    display: block;
+    font-size: 16px;
+    font-weight: bold
+}
+.navbox .toplink a{
+	display:block;
+    color: #fff
+}
+.navbox .firstLi{
+    background:#38424d;
+    line-height: 50px;
+    font-size:16px;
+    color:#ffffff;
+}
+.navbox .firstLi>h3{
+	padding-left: 25px;
+}
+.navbox .firstLi h3.cur a{
+	color:#ffffff;
+	opacity:1;
+	filter:alpha(opacity=100);
+}
+.navbox .firstLi h3.cur .arrow-right{
+    margin-top: -4px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: transform 0.3s ease;
+    -moz-transition: transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
+}
+.navbox .firstLi>h3 a{
+    position: relative;
+    display: block;
+    color:#ffffff;
+    opacity:0.5;
+    filter:alpha(opacity=50)
+}
+.arrow-right {
+    position: absolute;
+    top: 50%;
+    margin-top: -3px;
+    left: -12px;
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    vertical-align: middle;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(-45deg);
+    -webkit-transition: transform 0.3s ease;
+    -moz-transition: transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
+    filter:alpha(opacity=50);
+}
+.navbox .firstLi>h3:hover{
+    background:#12181f;
+}
+.navbox .firstLi>h3:hover a{
+    color: #67ad03;
+    opacity:1;
+    filter:alpha(opacity=100);
+}
+.navbox .firstLi>h3:hover .arrow-right{
+    border-right: 2px solid #67ad03;
+    border-bottom: 2px solid #67ad03;
+}
+.navbox .firstLi ul{
+	display:none;
+}
+.navbox .secondLi{  
+    background:#38424d;
+    line-height: 40px;
+    font-size:14px;
+    color:#ffffff;
+}
+.navbox .secondLi>h3{
+	padding-left: 37px;
+}
+.navbox .secondLi>h3 a{
+	position: relative;
+	display:block;
+    font-size: 14px;
+    color: #fff;
+    opacity:0.5;
+    filter:alpha(opacity=50);
+    font-weight: 500;
+}
+.navbox .secondLi>h3 .arrow-right{
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+.navbox .secondLi>h3.cur a{
+    opacity:1;
+    filter:alpha(opacity=100);
+}
+.navbox .secondLi h3.cur .arrow-right{
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+.navbox .secondLi>h3:hover{
+    background:#12181f;
+}
+.navbox .secondLi>h3:hover a{
+    color: #67ad03;
+     opacity:1;
+     filter:alpha(opacity=30);
+}
+.navbox .secondLi>h3:hover .arrow-right{
+    border-right: 2px solid #67ad03;
+    border-bottom: 2px solid #67ad03;
+}
+.navbox .thirdLi{
+    background:#38424d;
+    height:35px;
+    line-height: 35px;
+    font-size:12px;
+    color:#ffffff;
+}
+.navbox .thirdLi>h3{
+	padding-left:49px;  
+}
+.navbox .thirdLi>h3 a{
+	 display: block;
+	 border-top: solid #49525c 1px;
+	 font-size: 12px;
+	 color: #fff;
+    opacity:0.5;
+    filter:alpha(opacity=50);
+    font-weight: 500;	 
+}
+.navbox .thirdLi:first-of-type>h3 a{
+    border-top: none;
+}
+.navbox .thirdLi>h3:hover{
+    background:#12181f;
+}
+.navbox .thirdLi>h3:hover a{
+    color: #67ad03;
+     opacity:1;
+     filter:alpha(opacity=100);
+     border-top: none;
+}
+.navbox .firstLi h3.current a{   
+    position: relative;
+    width: 198px;
+    margin-left: -25px;
+    background:#12181f;
+    color:#67ad03;
+    padding-left: 25px;
+    opacity:1;
+    filter:alpha(opacity=100);
+    border-top: none;
+    border-left:solid 3px #67ad03;
+}
+.navbox .firstLi h3.current a i{
+	position: absolute;
+    top: 50%;
+    margin-top: -6px;
+    right: 0;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-right: 8px solid #ffffff;
+    border-bottom: 6px solid transparent;
+}
+
+.navbox .secondLi h3.current a{   
+    position: relative;
+    width: 198px;
+    margin-left: -37px;
+    background:#12181f;
+    color:#67ad03;
+    padding-left: 37px;
+    opacity:1;
+    filter:alpha(opacity=100);
+    border-top: none;
+    border-left:solid 3px #67ad03;
+}
+.navbox .secondLi h3.current a i{
+	position: absolute;
+    top: 50%;
+    margin-top: -6px;
+    right: 0;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-right: 8px solid #ffffff;
+    border-bottom: 6px solid transparent;
+}
+
+.navbox .thirdLi h3.current a{   
+    position: relative;
+    width: 198px;
+    margin-left: -49px;
+    background:#12181f;
+    color:#67ad03;
+    padding-left: 49px;
+    opacity:1;
+    filter:alpha(opacity=100);
+    border-top: none;
+    border-left:solid 3px #67ad03;
+}
+
+/* .navbox .thirdLi h3.current a:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background:#67ad03;
+    width:3px;
+    height:35px;
+}
+.navbox .thirdLi h3.current a:after{
+    position: absolute;
+    top: 50%;
+    margin-top: -6px;
+    right: 0;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-right: 8px solid #ffffff;
+    border-bottom: 6px solid transparent;
+} */
+.navbox .thirdLi h3.current a i{
+	position: absolute;
+    top: 50%;
+    margin-top: -6px;
+    right: 0;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-right: 8px solid #ffffff;
+    border-bottom: 6px solid transparent;
+}
+
+/* 未安装的应用css*/
+.navbox .uninstall h3{
+    background-color: #485059;
+    border-bottom: none;
+    font-size:16px;
+}
+.navbox .uninstall.uninstall_title h3 a{
+	font-size:14px;
+}
+.navbox .uninstall h3 a{
+    color: #999;
+}
+.navbox .uninstall h3 a b{
+    border-color: #999;
+}
+
+.navbox .firstLi.uninstall>h3:hover{
+    background:#485059;
+}
+.navbox .firstLi.uninstall>h3:hover a{
+    color: #999999;
+    opacity:0.5;
+    filter:alpha(opacity=50);
+}
+.navbox .firstLi.uninstall>h3:hover .arrow-right{
+    border-right: 2px solid #999;
+    border-bottom: 2px solid #999;
+}

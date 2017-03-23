@@ -1,0 +1,153 @@
+/*
+Uploadify
+Copyright (c) 2012 Reactive Apps, Ronnie Garcia
+Released under the MIT License <http://www.opensource.org/licenses/mit-license.php>
+*/
+
+.uploadify {
+    position: relative;
+}
+.uploadify-button.disabled {
+    background-color: #D0D0D0;
+    color: #808080;
+}
+.uploadify-queue {
+    display:none;
+}
+.uploadify-queue-item {
+    background-color: #F5F5F5;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font: 11px Verdana, Geneva, sans-serif;
+    margin-top: 5px;
+    max-width: 350px;
+    padding: 10px;
+}
+.uploadify-error {
+    background-color: #FDE5DD !important;
+}
+.uploadify-queue-item .cancel a {
+    background: url('../img/uploadify-cancel.png') 0 0 no-repeat;
+    float: right;
+    height:	16px;
+    text-indent: -9999px;
+    width: 16px;
+}
+.uploadify-queue-item.completed {
+    background-color: #E5E5E5;
+}
+.uploadify-progress {
+    background-color: #E5E5E5;
+    margin-top: 10px;
+    width: 100%;
+}
+.uploadify-progress-bar {
+    background-color: #0099FF;
+    height: 3px;
+    width: 1px;
+}
+
+/** only for Contacts List */
+.fileupload {
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.fileupload ul {
+    font-size: 0;
+    list-style: none;
+}
+
+.fileupload ul li {
+    display:inline-block;
+    width:60px;
+    height:60px;
+    float:left;
+    margin:0 10px 10px 0;
+}
+.fileupload.px40 ul li {
+    display:inline-block;
+    width:40px;
+    height:40px;
+    float:left;
+    margin:0 10px 10px 0;
+}
+.fileupload ul li.pic {
+    position:relative;
+    background:url(../images/loading.gif) no-repeat center center;
+
+}
+.fileupload ul li.pic i{
+    content:"";
+    display:block;
+    width:22px;
+    height:22px;
+    position:absolute;
+    background:url(../images/upload-close.png) no-repeat;
+    top:-9px;
+    right:-9px;
+    cursor:pointer;
+}
+.fileupload ul li img{
+    width:60px;
+    height:60px;
+}
+
+.fileupload ul li .uploadify-button {
+    background:url(../images/upload.png) no-repeat;
+}
+.fileupload .uploadify:hover .uploadify-button {
+    background-position:0 -80px;
+}
+
+.fileupload.px40 ul li .uploadify-button {
+    background:url(../images/upload-pic40.png) no-repeat;
+}
+.fileupload.px40 .uploadify:hover .uploadify-button {
+    background:url(../images/upload-pic40.png) 0 -53px no-repeat;
+}
+
+/* addition from lsl @GanisEnder_������榫� */
+.uploadify-queue{display:none !important;}
+.uploadify-queue .uploadify-queue-item {
+    width: 79px;
+    height: 79px;
+    margin: 0 10px 10px 0;
+    padding: 0;
+    float: left;
+    border: 1px #EAEAEA solid;
+    border-radius: 0px;
+}
+.fileupload.px40 .uploadify-queue .uploadify-queue-item {
+    width: 39px;
+    height: 39px;
+    margin: 0 10px 10px 0;
+    padding: 0;
+    float: left;
+    border: 1px #EAEAEA solid;
+    border-radius: 0px;
+}
+.uploadify-queue .uploadify-queue-item .fileName {
+    display: none;
+}
+.uploadify-queue .uploadify-queue-item .uploadify-progress {
+    display: none;
+}
+.uploadify-queue .uploadify-queue-item .data {
+    display: none;
+}
+.uploadify-queue .uploadify-queue-item {
+    background: url(../images/loading.gif) no-repeat center center;
+}
+/*图片上传1*/
+.inputfile01 {
+    width:155px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    filter: alpha(opacity:0);
+}
+
